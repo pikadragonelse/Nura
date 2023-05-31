@@ -1,0 +1,40 @@
+.wrapperPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: var(--contrast-color);
+    background-color: var(--main-color);
+}
+
+.wrapperMain {
+    position: relative;
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.wrapperContent {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: var(--main-color);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: var(--contrast-color);
+        border-radius: var(--border-radius-md);
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: var(--border-radius-md);
+        background-color: var(--contrast-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: var(--border-radius-md);
+        background-color: var(--sub-color);
+    }
+}

@@ -1,0 +1,45 @@
+.productList {
+    display: flex;
+    justify-content: center;
+}
+
+.addProduct {
+    --size-width: 270px;
+    --size-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size-width);
+    height: var(--size-height);
+    margin-right: var(--spacing-md);
+    cursor: pointer;
+    border-radius: var(--border-radius-md);
+    background-color: var(--sub-color);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--transparent-light);
+    }
+}
+
+.loadingProduct {
+    --size-product: 270px;
+    position: relative;
+    display: none;
+    max-width: var(--size-product);
+    min-width: calc(var(--size-product));
+    margin-right: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    background-color: var(--transparent-dark);
+    overflow: hidden;
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.loadingActive {
+    display: block;
+}

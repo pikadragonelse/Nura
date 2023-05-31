@@ -1,0 +1,28 @@
+.sidebar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--font-s-md);
+    margin-left: var(--spacing-lg);
+    border: 1px solid var(--black);
+    border-radius: var(--border-radius-mch);
+    box-shadow: 2px 0px 10px var(--black);
+    background-color: var(--sub-color);
+    z-index: var(--z-higher);
+}
+
+.sidebarListContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    gap: var(--spacing-md);
+    padding: 0;
+    margin: 0;
+}
+
+.iconSidebar {
+    padding: 0;
+    margin: 0;
+}

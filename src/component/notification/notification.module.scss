@@ -1,0 +1,63 @@
+.notiApp {
+    position: absolute;
+    top: var(--spacing-md);
+    right: 0;
+    display: none;
+    gap: var(--spacing-md);
+    align-items: center;
+    font-size: var(--font-s-md);
+    width: 500px;
+    padding: var(--spacing-md);
+    border: 1px solid var(--sub-light-color);
+    border-right: unset;
+    border-top-left-radius: var(--border-radius-lt);
+    border-bottom-left-radius: var(--border-radius-lt);
+    box-shadow: 0 5px 5px -5px var(--black);
+    background-color: var(--sub-color);
+    z-index: calc(var(--z-highest) + 1);
+    transition: transform;
+    animation: appearFromRight 0.3s ease-in;
+
+    &.activeNoti {
+        display: flex;
+    }
+}
+
+@keyframes appearFromRight {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.notiClose {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--contrast-str-color);
+    }
+}
+
+.notiStatus {
+    font-size: var(--font-s-lg-2);
+}
+
+.errorState {
+    color: var(--sub-primary-color);
+}
+
+.notiInfo {
+    width: 100%;
+}
+
+.notiTitle {
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}

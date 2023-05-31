@@ -1,0 +1,16 @@
+.sidebarContent {
+    display: block;
+    margin: var(--spacing-lg) 0;
+    color: var(--contrast-color);
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.sidebarContentText {
+    position: relative;
+    font-size: var(--font-s-md);
+    padding: var(--spacing-sm);
+}

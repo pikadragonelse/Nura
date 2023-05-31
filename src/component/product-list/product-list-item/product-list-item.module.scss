@@ -1,0 +1,108 @@
+.product {
+    --size-product: 270px;
+    position: relative;
+    max-width: var(--size-product);
+    min-width: calc(var(--size-product) - 50px);
+    margin-right: var(--spacing-md);
+    cursor: pointer;
+    text-decoration: none;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover .productImageWrapper::before {
+        opacity: 1;
+    }
+}
+
+.productImageWrapper {
+    position: relative;
+    height: 350px;
+    margin-bottom: var(--spacing-sm);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        border-radius: var(--border-radius-md);
+        background-color: var(--transparent-dark);
+        transition: opacity 0.1s ease-in;
+        opacity: 0;
+        z-index: var(--z-high);
+    }
+}
+
+.productLink {
+    display: block;
+    font-size: var(--font-s-md);
+    color: var(--contrast-color);
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-md);
+    object-fit: cover;
+}
+
+.productHeading {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-weight: var(--font-w-lg);
+    font-size: var(--font-s-lg);
+    margin-bottom: vaR(--spacing-vr-sm);
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-lt);
+    overflow: hidden;
+}
+
+.productPrice {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-s-md);
+}
+
+.compareButton {
+    font-size: var(--font-s-sm);
+    z-index: var(--z-higher);
+}
+
+.productDesc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: var(--font-s-sm);
+    overflow: hidden;
+}
+
+.compareMark {
+    position: absolute;
+    z-index: var(--z-higher);
+    top: var(--spacing-sm);
+    background-color: var(--primary-color);
+    padding: var(--spacing-vr-sm);
+    right: -4px;
+    border-top-left-radius: var(--border-radius-lt);
+    border-bottom-left-radius: var(--border-radius-lt);
+    font-weight: var(--font-w-lg);
+    display: none;
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-top: 3px solid var(--dark-primary-color);
+        right: 0;
+        bottom: -3px;
+        border-right: 4px solid transparent;
+    }
+}
+
+.compareMark.mark {
+    display: block;
+}

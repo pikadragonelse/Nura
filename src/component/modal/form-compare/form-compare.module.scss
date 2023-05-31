@@ -1,0 +1,52 @@
+.formCompare {
+    position: absolute;
+    display: block;
+    font-size: var(--font-s-md);
+    width: 1500px;
+    color: var(--contrast-color);
+    border: 1px solid var(--transparent-light);
+    border-radius: var(--border-radius-md);
+    box-shadow: 1px 0px 10px var(--transparent-light);
+    background-color: var(--sub-color);
+    z-index: var(--z-highest);
+}
+
+.formCompareIcon {
+    position: absolute;
+    right: var(--spacing-sm);
+    top: var(--spacing-sm);
+    font-size: var(--font-s-lg);
+    cursor: pointer;
+    z-index: var(--z-high);
+
+    &:hover {
+        opacity: var(--opacity-lt);
+    }
+}
+
+.formCompareHeader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: var(--spacing-md) 0;
+}
+
+.formCompareHeading {
+    font-size: var(--font-s-md);
+    font-weight: var(--font-w-lg);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.formCompareBody {
+    display: flex;
+}
+
+.titleSection {
+    margin-left: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.formCompareMain {
+    flex: 1;
+}

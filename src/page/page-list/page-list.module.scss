@@ -1,0 +1,24 @@
+.pageListContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.paginationContainter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.paginationAmountItem {
+    display: flex;
+    font-size: var(--font-s-md);
+    gap: var(--spacing-sm);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    line-height: 1;
+    right: calc(2 * var(--spacing-vr-lg));
+}

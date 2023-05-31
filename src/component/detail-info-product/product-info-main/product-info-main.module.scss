@@ -1,0 +1,16 @@
+.productName {
+    font-size: var(--font-s-lg-1);
+}
+
+.productPrice {
+    display: flex;
+}
+
+.newPrice {
+    font-size: var(--font-s-lg);
+}
+
+.containerButton {
+    display: flex;
+    gap: var(--spacing-md);
+}

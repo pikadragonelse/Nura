@@ -1,0 +1,15 @@
+.specialFeature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    line-height: 1;
+    height: 50px;
+}
+
+.specialFeatureIcon {
+    font-size: var(--font-s-lg-1);
+}
+
+.featureIcon {
+    color: var(--primary-color);
+}

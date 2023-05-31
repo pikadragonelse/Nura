@@ -1,0 +1,15 @@
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-s-lg);
+    width: 100%;
+    height: 100%;
+    color: var(--contrast-color);
+    background-color: var(--main-color);
+}
+
+.errorHeading {
+    font-weight: var(--font-w-lg);
+}

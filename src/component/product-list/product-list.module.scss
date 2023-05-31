@@ -1,0 +1,13 @@
+.productList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-b-sm) 0;
+}
+
+.mainList {
+    position: relative;
+    height: 530px;
+}

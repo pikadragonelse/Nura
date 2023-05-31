@@ -1,0 +1,9 @@
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: var(--opacity-lt);
+    z-index: var(--z-highest);
+}

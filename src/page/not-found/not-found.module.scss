@@ -1,0 +1,46 @@
+.notFoundWrapper {
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://wallpapercrafter.com/sizes/2048x1152/45885-waves-sea-dark-nature-hd-4k.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+
+.authorName {
+    position: absolute;
+    top: var(--spacing-md);
+}
+
+.errorItem {
+    margin: var(--spacing-md) 0;
+
+    &:nth-child(3) {
+        margin: 0;
+    }
+}
+
+.errorTitle {
+    font-size: calc(4.5 * var(--font-s-lg-1));
+    opacity: vaR(--opacity-vr);
+}
+
+.errorContent {
+    font-size: var(--font-s-lg-1);
+}
+
+.errorDesc {
+    font-size: var(--font-s-md);
+}
+
+.notFoundButton {
+    font-size: var(--font-s-lg);
+    padding: var(--spacing-b-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover {
+        opacity: unset;
+        background-color: var(--sub-primary-color);
+    }
+}

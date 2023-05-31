@@ -1,0 +1,12 @@
+.navInfoItem {
+    margin: 0 var(--spacing-b-sm);
+    font-size: var(--font-s-md);
+    cursor: pointer;
+    color: var(--contrast-color);
+    text-decoration: none;
+
+    &:hover {
+        opacity: var(--opacity-lt);
+        text-decoration: underline;
+    }
+}

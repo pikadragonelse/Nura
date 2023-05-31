@@ -1,0 +1,31 @@
+.sectionOfProduct {
+    position: relative;
+
+    &:first-child.sectionOfProduct::before {
+        display: none;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: calc(-1 * (var(--spacing-md) / 2));
+        border-top: 1px solid var(--sub-color);
+    }
+}
+
+.headingSubInfo {
+    margin-bottom: var(--spacing-sm);
+}
+
+.productSubInfo {
+    margin: var(--spacing-md) 0;
+}
+
+.viewInfoLink {
+    text-decoration: underline;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}

@@ -1,0 +1,1915 @@
+{
+  "listProduct": [
+    {
+      "id": 1,
+      "name": "NuraTrue Pro 123",
+      "price": 29999,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 1,
+      "page3": 1
+    },
+    {
+      "id": 2,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 2,
+      "page3": 1
+    },
+    {
+      "id": 3,
+      "name": "Nuraphone 1",
+      "price": 3999,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 3,
+      "page3": 1
+    },
+    {
+      "id": 4,
+      "name": "Nuraloop",
+      "price": 179,
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 4,
+      "page3": 2
+    },
+    {
+      "id": 5,
+      "name": "Nuraloop",
+      "price": 179,
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 5,
+      "page3": 2
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 6,
+      "page3": 2,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 7,
+      "page3": 3
+    },
+    {
+      "id": 8,
+      "name": "NuraTrue123",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 8,
+      "page3": 3
+    },
+    {
+      "id": 9,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 9,
+      "page3": 3
+    },
+    {
+      "id": 10,
+      "name": "Nuraloop",
+      "price": 179,
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 10,
+      "page3": 4
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 11,
+      "page3": 4,
+      "id": 11
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 12,
+      "page3": 4,
+      "id": 12
+    },
+    {
+      "id": 13,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 13,
+      "page3": 5
+    },
+    {
+      "id": 14,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 14,
+      "page3": 5
+    },
+    {
+      "id": 15,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 15,
+      "page3": 5
+    },
+    {
+      "id": 16,
+      "name": "Nuraloop",
+      "price": 179,
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 16,
+      "page3": 6
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 17,
+      "page3": 6,
+      "id": 17
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 18,
+      "page3": 6,
+      "id": 18
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 19,
+      "page3": 7,
+      "id": 19
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 20,
+      "page3": 7,
+      "id": 20
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 21,
+      "page3": 7,
+      "id": 21
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 22,
+      "page3": 8,
+      "id": 22
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 23,
+      "page3": 8,
+      "id": 23
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 24,
+      "page3": 8,
+      "id": 24
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 25,
+      "page3": 9,
+      "id": 25
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 26,
+      "page3": 9,
+      "id": 26
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 27,
+      "page3": 9,
+      "id": 27
+    },
+    {
+      "id": 28,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 28,
+      "page3": 10
+    },
+    {
+      "id": 29,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 29,
+      "page3": 10
+    },
+    {
+      "id": 30,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 30,
+      "page3": 10
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 31,
+      "page3": 11,
+      "id": 31
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 32,
+      "page3": 11,
+      "id": 32
+    },
+    {
+      "id": 33,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 33,
+      "page3": 11
+    },
+    {
+      "id": 34,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 34,
+      "page3": 12
+    },
+    {
+      "id": 35,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 35,
+      "page3": 12
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 36,
+      "page3": 12,
+      "id": 36
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 37,
+      "page3": 13,
+      "id": 37
+    },
+    {
+      "id": 38,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 38,
+      "page3": 13
+    },
+    {
+      "id": 39,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 39,
+      "page3": 13
+    },
+    {
+      "id": 40,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 40,
+      "page3": 14
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 41,
+      "page3": 14,
+      "id": 41
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 42,
+      "page3": 14,
+      "id": 42
+    },
+    {
+      "id": 43,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 43,
+      "page3": 15
+    },
+    {
+      "id": 44,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 44,
+      "page3": 15
+    },
+    {
+      "id": 45,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 45,
+      "page3": 15
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 46,
+      "page3": 16,
+      "id": 46
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 47,
+      "page3": 16,
+      "id": 47
+    },
+    {
+      "id": 48,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 48,
+      "page3": 16
+    },
+    {
+      "id": 49,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 49,
+      "page3": 17
+    },
+    {
+      "id": 50,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 50,
+      "page3": 17
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 51,
+      "page3": 17,
+      "id": 51
+    },
+    {
+      "name": "Nuraloop",
+      "price": "179",
+      "desc": "Personalised sound on the go, with 16 hour battery life and analog cable support.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f80b0d1e317e67a6695_nuraloop-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 52,
+      "page3": 18,
+      "id": 52
+    },
+    {
+      "id": 53,
+      "name": "NuraTrue Pro",
+      "price": 299,
+      "desc": "The world’s first earbuds with lossless audio and personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "CD-quality lossless audio",
+        "Spatial audio",
+        "Wireless charging",
+        "Best-in-class voice calls"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "Adaptive active noise cancellation",
+        "Multipoint connectivity",
+        "Bluetooth® 5.3",
+        "Perfect fit detection",
+        "Immersion mode",
+        "8-hour battery life (32 hours with the case)",
+        "IPX4 sweat resistance"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": false,
+      "shipping": false,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": false,
+      "warranty": false,
+      "page1": 53,
+      "page3": 18
+    },
+    {
+      "id": 54,
+      "name": "NuraTrue",
+      "price": 199.99,
+      "desc": "Premium wireless earbuds with our award-winning personalised sound.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f803075ee59ca3188ba_nuratrue-pro-product-p-500.jpg",
+      "features": [
+        "Active noise cancellation (ANC)",
+        "Fit detection",
+        "Social mode (transparency)",
+        "Customisable touch buttons"
+      ],
+      "normalFeatures": [
+        "Personalised sound (self-tuning EQ)",
+        "6-hour battery life (24 hours with the case)",
+        "Immersion mode",
+        "IPX4 sweat resistance",
+        "Bluetooth® 5.0",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 54,
+      "page3": 18
+    },
+    {
+      "id": 55,
+      "name": "Nuraphone",
+      "price": 399,
+      "desc": "The original and ultimate in personalised sound, with extra bass speakers for an incredible immersive listening experience.",
+      "image": "https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/62ce3f812ab9f2453b3900c4_nuraphone-product-p-500.jpg",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "Active noise cancellation (ANC)",
+        "Dedicated bass speakers",
+        "Fit detection"
+      ],
+      "normalFeatures": [
+        "Customisable touch buttons",
+        "Social mode (transparency)",
+        "Voice calls",
+        "Wired and wireless",
+        "20+ hours battery life"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 55,
+      "page3": 19
+    },
+    {
+      "name": "tesst",
+      "price": 123465,
+      "desc": "123465",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAq0AAAIxCAYAAABn+IGTAAAABHNCSVQICAgIfAhkiAAAABl0RVh0U29mdHdhcmUAZ25vbWUtc2NyZWVuc2hvdO8Dvz4AAABAaVRYdENyZWF0aW9uIFRpbWUAAAAAAFRo4bupIHTGsCwgMDUgVGjDoW5nIDEwIE7Eg20gMjAyMiAxMTo0Mzo1NyArMDdymmR7AAAgAElEQVR4nOzdeVxVdf7H8RfLvayyiCwqKKIghmtupaZpaqVlUok2meVM6cyUNbbYpjmTOjPZNpM1/bRmTMsZxUqztFzKJcVccEsKwR00QVnlwuVe4P7+ABEQd5BTvZ+Px33EPfd7zvkceoBvvuf7/R6n3HyLAxERERERA3Nu6AJERERERC5GoVVEREREDE+hVUREREQMT6FVRERERAxPoVVEREREDE+hVUREREQMT6FVRERERAzP9UIfOhwOHA4t4yoiIiIi9cfJyQknJ6cLtqk1tJaVleHs5ITZ5IKriwuuri44O6tTVkRERETqTllZGSUlpZSUlmK3l1LmcJw3c1YLrQ6Hg7KyUswmV7y9PK9JsSIiIiLy6+Ts7IzZ7IwZE3hAgaWIYpsdFxeXc3peK0Orw+EAh4NG3p6YXC84akBEREREpM55e3lgNrtSWFiMA6oF18r+19LSUpydUWAVERERkQZjNplwdi7PplU5Q/l4AhwOfBp5N0hxIiIiIiJn+DTyxlFWVp5RKzhDeZI1m9XDKiIiIiLG4O5mqtbb6uxwOCgtLdWwABERERExDGcXF0pLSyuXX3UuXzGgDLPZ1MCliYiIiIiUM5tMlJWVnQ2tULEuq9ZhFRERERGDcHV1OXdMq556JSIiIiJGUzWjqntVRERERAxPoVVEREREDK/Blwywl5SRklHC5oMlnMgr41CWg28Pln92UwRENHEi2MeZm9q4EBFowuSqnC0iIiLya9MgodVeUsbnu60sSixlw4Hzt1vxA4ADKK142RgQ5cSILs4M7eiuACsiIiLyK3FNQ2tJSSlrfizmDwtLsZaUb+ve0pmR3cwMjHbF3QRmV/AwlT9ntsjuwFYCVjusSS5h0XYb36SU8U1KKe6fWHh3pDMDr3PH1dXlWl6GiIiIiFxjTtm5px0Wi4XQZsH1dhKHw8HmFAvjF5VxylIeSF+7x527u7hWBtRLVWR38OnOEp7+xApAEy8Hc0Y5c0OkF05Ol3csERERETGu9OMZeHl54ezsXP+htaSsjLfXpfPKSn8ABkYW8eq9jQjx8wCg2F5CdvZPHDyazNYMK/uybBzNdWAr9SLEP4AQHw+CPMvoFxlIxxaBeFQ8BCG/0Mr0L4v5cGv5EIE3RpQSd70PLlpvVkREROQXoWpordeEZyku4bH4jMrAuugPZj58OIgQPw9O20r59sBh1v+4hazTGVjLIDw0gO6RIfx+aG/u7taCO3q2pn24P02DvDllL2b17kRS0vdTUmrDx9Odmff4smpC+dCAJxe78PT/0rHa7FdW7PpHiTSbMdfyatQojMhuA7n/qflsya260wnmDGxU3i7sd6yseUxrMvPvjaw4Thh3zEnGet4CPuP+RlXOOfAtDp/TxsrK34Wdra3RQOacaXSB+qu9Ip9iS83aq74aBRIW2Y2B9z/FnJWHz6238jyN6PPWuRUCWKvVEsbvVp7/qkVEREQuRb2F1tKyMh5dkM5nO73x9yzlq8ed6RvuhsVWwrxNSYyYOIkft6wgmFwa+zejWfO2tGvSiH7hfvRoUsbglmZ6++fTP8RCn4ACrvc/zfVNXXAtPkHWT0kUWk5RWlpKh1BPtk9yJdjHwcI9/jzzv6PVnp5QF4qLMziyZwOLZz3MwJseZX3uxfeBw8wffScPLzsCBDP47dV8PC4a90s955ZlrDpRY6N1PfGrMi6r9stWnEfGkT1sWDyLx+7sQId757D7sjKnlfXzl3Gk8n0Gq+avvEBYFxEREbm4egutr311kJX7AvDzKOXT8SY6NffidHEJj879ksl/fY5vF73L+iUf8NYrb7N54xa83T2JaNqS8MBAynIyCPMsJcQln2aeVloEOhPoZsfLFcocriQfzWblpkS+2JiAraSE5gEerH/amwBPOx//EMTbqy6wJMFFudHjtRRsNlvlK//oNt4f0RKA4n3zmbXqYqn1MPPvH8SjFYF12GUGVl9fXyjewrIaqdW6ZRkbMgBfX3wvVP/0bWRmZtb6yv9+Bj3POeEIFp9pc3QP3y5+jQd6+ALFHFn2GHf87jNq5ufzsq5kfkWwDg4uH3KSsSqelZcU9EVERERqVy+h9YdjVv6xvjywzHvQiegQL37MsHDHrK9Zu/JT8r//ljHDu3I45Sj/W/QVI2Lvpn/fmxj72z8yZ85H7Es+xKGDRziYmsq+nTtYv2IFPySn8MyLf6bf7fewPGEvPxU3osgjmM/2JJNtKcLXzZmlfzAD8Le1IfxwrO769txDOjFmTN/KoGi1XujYh4m/fxCPLj5CcUVg/egyAiu40alnJ3wpZn38qmphcfeyVRzBjY49O+F3wYJ98fPzq/Xl7l5LJe7uuJ9pExJNz7se599r1jC9R/kVZyyezKtbLq363JXxlGfWtsTNmEBHNyBvFR9eNOiLiIiInF+dh9bS0jLi3i8G4F/3WejRypfTxaU89MF2Dm1fgX3fOkb0vY6Unens2pNBqZMrLsCR1FS+/TaRKS+/yeBho+h7693cMuwB7rr/9yz9OoGH//Qi8xZ9yfGTVho3j8Y7MAJbmQfFNjeW7zqCvcxBmyBv5o8pP/fIf9soLa2jYQK5u5k/fwN5AL49GdY3pPZ21vLA+rvFRyim5RUE1nLufQfTyQ2K1y9jQ2XW20L8qiNAOP36tqz/2+3unXh8yjDK//TYx6pluy9hp1xWfbiq/PvUdhhj4oYR19YNyGPl/GWX3lsrIiIiUkOdh9YVewrJKnSmb2QBsZ1DyocELNzF8cQvsO/9nBuj/PhxdyqJOw7j4mSCUgelDnDzcGPQLf3p1+cmzCYPLEV2svKKKXPxxlrizMmsPErsgL2YxG+/wc/FjntpMY7iQtxcXViz5yglZQ4GxTRhaLtCTlmcWJVUdAVXUMzWFzvQqFGjipcZc1B3Hl58gpY9RvDaxx8xLryW3axHiP/dnRWBFYIfePuKAisAfv0YVp5aiT/TQ7l7Gav2AS37MqzTRfa35pGbm1vLy3pZYde95630dCv/+vC+fRff98Qy5q/MA6DtsDg6uUczLK4TbkDx+vksU2oVERGRK1SnobXYVsrvFzkAeGNE+YoBH2w9wpplc8ne/AF92/nw04FM9v5wCpzM2B0O3F1dcXJ2YvCQgXS6LpKWzQIxuzjj4uKKr78/p3IL+GHfIbp07oq7yQknexEr/vs+yRtX4O3Ix98DnO35FORnkZJePpby9VGBAPxxURn2kivobS0uprjyVbmRI/u2smz+shorCFTI28CHi/dxpnlG/ItM23KF/aHuLRk8rC1u5LH+s/XkAskrV7IPaDk4jgtn1mK2Tu5OUFBQLa9AfvfZZdTk54bbma+tVi46knfZfNYXA3RkWFx5ldFxcXRyA4q3EB9/+NLPLSIiIlJFnYbW/261UuYof3BAc193jucW8vac98jb9CH9uviRc6KQAwd+otTJifDWLYluHY2Tszu+gX6k/5TG0SOpbN+agNnNjRatoigsduBw8SD9p2xahkfRJqIVXmYTviYHn87/P3YkrMJRkkuJPRcPTyeS0o5SaLPj6+7Ma/e4Yy2Bhdsut7f13IlYtvyjbFs8gR4cYcOHj3HH6Pm1LEcFvj0m8NHnrzHYFyjew6ujf8dnV9i7GD0sjrZA3qp41ucms2zZPiCYvsN64ndF3bdXIDev/FY/gK/vhcfRcphl87eUh/aOtxLXtmJz+GDiylMrW+LjSa63YkVEROSXrE5D6+d7y3s17+5S/nTYtz9dSd7WxQzsGQ4FLmzcnEqZyYOAJgGUObty0+ABdOzRlYiWrfhx148k7t5NfnExJg9PPLz9MHn44O3TBL/GzbEUljL4tjtp1rw5rSOjGHb33SyKX8KevQfB2Ydimytmsz8/HD1ZrYYlu+tgXKt7CJ3uep0ZceUrCOStn8+qwzXa+I7g/TWvE3fr47z//gO0BDiymIdHv0XylXS4Rt/KrR2BvK2sWraKVbuLIXgwcf0ullhrCd2Vr9MsuOvSE2/u+pXsLi4/ZqdObS881CE5nvjdFf3Me16lu8+ZdVo78vTW8u3FW+NZptQqIiIiV6DOQqvFWsLmQ9C9pTMeJicsVhv//c/rdI/yJu9YIVu/S8U/0J9mLcPwDQrC6uzCidM5+Df1pbTQRpvmEXh4NyLyunZc370b0de1Y+CAW7iu7XX4NfIlJzsPB640axHBT1n5bEr8nkNHMpg/72N27dxHqc2E7XQJiTsPYCm04mFyontLZzYfKq+tblnJrRlE3d05MzE/5K53+OiZjrgBeRteZMSL6y96a/1cnYi7tS1whFWvzmJLMQQPjuOimbWuWLfw6rRlZAC4dSJuWPQFm+/+MJ6txRdsAuzhww8vZUKXiIiISHV1Flp3HCl/EtXIbuXLTp3MSOPZMUOw22H/0QOEt2rKuAd/h7tnE8wBzbjhtgFsS9rOkYP76dKuPa3DWrIjcQsnM9Ow5GXiKMzBtfg0bvbT2LJPsGnVlyyY+x+CApvQOrot23ftxlZSiJdzAfnH9rLo/Zl8Mv+frPv8QzZs2FCtlu/TbVd5dbkkr3yRafEVS+b7daJn+IXau9Nzxke8Xj5OgH2zRvPw/MOXfdZOw4bRFjiyr3z5rL7D+l3axK7zTsTKJdday2QsqxVrZZsTJK+fw6MD7+XVPcWAG23HzGDMBTPrFuKX7Sn/su0zbDunh3cP0zuWj47dt2w+l7h6loiIiEgl17o6UMKh8glYA6PLH6tanHeA5J2JbN2aTK8evQn0DSLAtylODneysvM5diKN4qLTFJaCycXB8Z/SsBRYcS5zsGP7dkKDg8nPyaVpcAj2shKG3TWUTVu388XnX9CiTSQ+Xu4U5BTRLMiLsBBf8rPSOXowmbBmYXyzZiW33za4spb1++GGNpd6JcVsfToK89Pn+ditJSNef+YSejyjGff++2y5aQQfHslg2VOjmdlpDZM6XUZXac9hDG77Kvv2Ab59ibv1UvatmIg1+XyfB/PA6jT+3a/KprzFjAhaXEtbN9qOeIfFr/e78HjWLfHE7ytv3/GBB2qZKBZN3JieTHt6A8X7ljF//Qx6XrMuYxEREalp567dfPHFCgqLiogbcQ9dOne6ou3XUp31tOZYyseOupucANiYuJPvdn2Pp3sjThw/zc5dhziUdpLszJOE+flxdPcPRDYNo2vnTmzdsYX9hw7QPDiMEpsrJlcTBw4fIb/YyslCC9HdehIa3YGglhG4urlRWJCHJS+DVq3Ccffw40h6BidOZoOrKxFtWmMttFar5UxtV84N35Zt6TviGd5fs40FceGXtlvIXbzz0TMVC+xvZdroRy/zyVA9iRtcPo7W95oNDXDDLbglPQY/wmuLt7FtwRiiL3jeKo9tdevJuLjau2TD48bQzw3gCMvmr9djXUVERBpQ/OJPSEs/RlZWNl98seKKt19LddbTuven8p5Wr/I78vxw4Bin8os5bbUR6evPnbcPY9funRQWnmJf8nGcXByccCrF16cxqWknARc8iktJTzuOm4cnri6u2EtLyDyVxdp16zl+8hSFBYUUW4vxdHejqKSYIweOcPDAMTy9PQiLaMsjD0+gTYQfx9OSADBXXN2xXMfFL6DfO6Ta3rnMqw5h3JrTjLtAC/eeM9h+esYlHOsuFpy2saDG1p6vp2J7vcbGfv8mzfbvGtsut/6L116rWs7T751ULnrqkDF8cXrM5Z5NRERE6oGjSjRyXMX2a6nOelq/P17+X1eX8t7N/8V/ToGljIg20eQXFrB89eesWbecAmsW3r6uNPLzwsnVRFGpC/4hrXBv1AScnGjVqiX+/gE0bd6ciDZtaB3Riuysk2xat44ff0zCxcWZ/Sn7sRbZcHUz0e3G7oS1asXDj4yjcWAQh44dYeY7bwDgUdHTuuVoXV2liIiIyM/fyLh7CA1tTuPGjbnzjiFXvP1aqrOeVjcT2ErPvo+7826aNw8jZd8+PvnkEwqL8vFu5ElIeDOGDb+LHTt3c+TQCZqGhNGuzfWkJP/AoUN7CQoOoqysFBcXFzy93HFycsLJyQWb3Yarq4mINq1xdXUlYdMmHKYSMuw/MXnKX3AqtWIt3UtOYRGjxjxXV5clIiIi8ovTpXOnWselXu72a6nOQmtMCHx3GEpKHbi6ONHEw8ThH/dQXFhMy5YtOZWfQ5mTA0uxg9QDRwlt1oKcjHxMZSWUWU/jaXbCcjqffSn7+OnYcewlJTgBJSU2OrXvwKTn/kxpGZjczJzKzmHrth2YnMzcced9lJRZcXVYOf5TFi2j+1Lq8AGgyF7egd2jRUN1ZIuIiIhIXaiz0No2yInvDjuw2MDXA4YNGcye3bvxDWpG3xwLNidnvli+grXfrGbnd7uIiWqNLTcPZ1sBbiZnCnJ/ol/fXjQJCuHjjz/GXloGOHCUlnH8WBol1iJOZedQaLPj4uZFdk4+jzz6J7q06YKbqYDcfCvhUQM5eKoEmz0LAFvF8qyhfnX6DAURERERucbqLM35e5UfylrRuxneNpqbBg2kxOFg9uzZZB5JIya0BS28fOgY0pwTST9iycigkZsLBYU5HDycQkizYE6dyiA7J5cyhxMOJxdsdjvp6cf4fs8u0tMOc7rgNLayUn4/8UnuuLUn/o6fKD1dQtsOgzlu8+a7gydw8/KuVsuZ2kRERETk56nO0ly/inVQ1ySXD2x18Q4gz9WbEk8/bujdh9sG3ExzbzfCPU3k7/8Rd0s+wY082bv3e9Zu3kxusRVnF2eaNW+Gs6srvv6NGTh4MJ7e3jjKHNiKi4iMbE1k2yiirruO/rfdRr6tiKOnMmjSujNbD+axPDGFfLMfN7YNr1ZLv0teo1VEREREjKjOhgd0CDUDRcQn2ri/hwkXZxe2HD9N8/C2jJ3QDtfsTO65czD9okPZmbCRnAILp13dWb5tJwczs3E4OTh0+BDtYzpiNptx83QnIqI1Xbt2ZcuGtbz77rvc0Kc394wZC6V2cnNzWfbVtwSFhpGRUciGpDQKvAI4VWClW3ggAPGJtiq1iYiIiMjPVZ31tHq5u3JDOGw9XEaR3YG7yZW8nHyWbEokKSMLc7OmeDcPJrpbZ9x8vGgSEoizqwk3T2+cnM2UlcK2rVs5cGA/7h6eZJ7KZufuPURfdx0+fj64uMKprJOczMnC6nDw9ebv2H2yiG35rqw7epgs53zy7JmM6NoUHzdXiuwOth4u44bw8tpERERE5OfL5dnnXviz3W7Hp5H31R+trJSVPzoI83emY3MXIkKa8PbqzexJSaLQXkyb6DYUFRdyJD0Nn4BALGUOQtu0ZW/KfiyWAgqycwkIaIKTq5m0I0c5lZ1FzqlM+vS8ni5dOtA4OJCt33/PT6cL+eHoTwRE98Du34J8WxHFtgJMTk68PbwPPu5m4hNLWPVjCVOHuBIVYrr6axMRERGRayr/tAWz2YyTk1Pd9bQCxHYx4+YKT39i5djpUkJ8PHn0jgHkmrxZd+gY/9mwlVP+zbnu9rtpe9MteAeFcDztKBSexqmoiMZ+HhxNO8zpoiKcnF0pyC8gJSWFzz7/nI3fJZCZnUVIaCh7kpIIa9Uak5MLJgu45HoT5BrN4z16EurrxY8ZBTz9iRU3V7itvVtdXqKIiIiINIA6Da1uZlfeu6/8kH/+7BQAd3eM4NZO7XFy8mJ7Sg5f7z2FNTCGkoBWdB80lIzTRTQOak1ETC+cGoeT79yI4KgODBz1G4IiI/FqGoZ78zbkuwdi9w8n+aci2nQbgIt3U/x9A/ExudDE24eW3ibu7xkBwNTPiwB47z5nXF20coCIiIjIz51Tdu5ph8ViIbRZcJ0csKysjK5/K+BEvhMfP1xA78imFJeU8sKnCVhMPpic3WlsdsLPlk6gezH7du/G1bUpJS6eZNuzcPc04Qw0DWlCevpRSkpL8PLx47S1FDefQKx44Ozph93JHWeTO6UOJ+zFxfxzWDSN3Fz5dHcWj/7XTHAjBzte8MbZWaFVRERE5Oco/XgGXl5eODs7131oBdh/wspNb9oB2DSxlIgQP37KK+DNTSkcP5VPEw8XBnYJxrXwENacDJKTfqLotBVsWeRnZ9KqVSt27N6Fp68fQaHhNG8Tw9FTBVjwwuEZREZ+KWUmL9y9fHF2wOSBkUQEeLH1SB53/as8pG6caKJ1iPtl1W0/kcii/65g18EM8vEgICySvrGjuD3K52yjrN18umAZCSkZ5NOIkKiuxN5/F10CrmbcrJ2d7z7Du/l38ddn+9MEgBMkvPsvPjoUziMv/pYuvldxeBEREZGfoaqhtW4nYlVo7O1KTFABn33vwhd7HQzvYKepfyN6hzdh5c4dbE1MoFfnlnRuE0QjTyshwX7c1C2ajs28iQkPxMO5GBM2hg0ZTEREK5oEN8Xs7QtuPnyfeoTswhKOZeXi7VTG/913AyE+7iRnFDByTinFJc78aUA+d3ZufHlF533H2zPmk2TqwvBRsQztGUnZoQRWfPUjHtf3IsIbsB/io7+9TUJZe4Y/MIqh3UMp/GE1n6zLJapve5q4XOl3zAWTpxchrdoSGeJN+WG8Cevek3al21i4Kpc23Vrje8XHFxEREfn5qToRq97Wgrq9UwCPHz3FWxvduO2dEj4en0tkkB9vjb6L+E1hJCUfJrppW0wuZooKMvhm+zZ8nJxxlJVxKjePkwUlJKef4mjWYUKiOpPn8OJITjF5Tp4UmrwY1689v+nSgkbuJrYfzWf0f8rIs7oy+LpcJt0adtn1/vTNapLs7Xhowih6VfRqRoTaSXvxIxJ2nWDgbSEUbl9BQl44dz/5AP0CAFoREWrnxIuf8PnmIbTt63OhU1xQk5ib6HfOVk8ibnuU5zofIs8O1NMiCAmbt5Cw+TtwlD9BrNhmo3u3rgwedEv9nFBERETkMtXrAqaTbvcjMz+ThXsa0fd1+O8jWfRvE8BvB9zAqfwOZBUVcPRwGqeOO7A5QjhqL8XZbMbi0RjnsNaklwWQY2pE9gkbrn4BFJo8uevGKO6JaUaonydA5RhWcKGF/wneHtUKpyuotcmtf+QvN5poUvU2vK8PPibIzy8B7OxLOkxJyCA6B1Rt04nOYYv4NCkVe9+utefKvFQ+nbeQ9SkZ2E3BtO17D3f7rGDaF415fOZvaW+qZXhAXipfLv6MDUnpZBWBR0AoMQPuYfQtrTj4/jO8ldSRx998gPZXcK1nFBYW8a//m0PnTh15+sknKrfv3LWbf707h7Xr1jPlxefx9PS4irOIiIiIXL16Da0urq68eX9Trm+ZxqTP/fnNe2YGx2TzwiATbZs2oomPF5GBQ8nJzWX+oo85brVx6vRpfjx6FA/PRvTvE0WTEC8a+/rTJTyUdsH+eJnLS/4xo5CpXxTybUr5klYP9sxm2l2tMV3hagEmzwCaelbfZk/Zw6GiRkTFBAP5ZGUV4RoQTPXhpT6EBHhQkpbOKbrS9Jwj55Mwbw5fpYcT9/gjdPY5TdIXH/Pe9nygce29p/Z0Pn3jHdbQldETRhPlC1m7lvHB4n/xL9NzPNStI6FpHnjWsuvl+Oesd7j37lgiI1tXbktLSyd+8Sc4OTmRlZXNS3+exmsz/3qVZxIRERG5OtfgUVFOPNCnBV3Dixg+x8aqJBOrkuD1e+zEdnHFw+REQGN/Jv7hkUs6WpHdwZKdJTz1SSngRiO3Mpb93o3oZi3rtuzCH/howXcURt3DnTEmoIj8QjCFeJ6TMz09XKGkiKLajpO3m/U/FNFqxAMMjPIBQuj34ChO/Pl1Tpznfr89ZRXrM3zo9eQoekWUt2lyy2juTpnKe19vJP9+D3yjOnH5gyDOWrf+Wzw9PCoDa1ZWFgEBAexLSSUrK/ts+Xl5rF7zNYMGaqiAiIiINJxr9nzT60I92DvFxFffW3nsYwdPfWLlqU+gR7gzI7uaGdjOFXeTEyYXBx6m8hv8RXYH9lInrHYHa34sYVGija2Hy8oLd4ZZ98KQjl6YTXV8GVm7mfvWXLaZ+vDE72+qmM1/hTIOk0VjOreqMt7V1IrOUY34elftu5xKOUaRayhtW1UNtZ60atUYdm/kg6+H8NDDkecf4lq4m7lvrMB+yzjG3RhQa5MNGzbSuXNHoLx3ddqMvxMQ0JiAgOrtnZycWLfuW4VWERERaVDXLLQCmE2uDLvem9s6lPLxjmJmrS1h6+Eyth62XvIxIhqXMWmQids7uGE21f10envat/xr1iIOBgzj6QmDiai8B++BjyfYCwupOSeqsKgEPDyobeSnvdBOISY8ayRMT5/z39wvKrSDyRWPGvuYPD0BE33j+hNxoUlZ9nxOpB/Dnmc//zmKCtm9ew+9e91AWFgoTz35BAkJ37H5uy3ntC0rK73AyURERETq3zUNrWeYTS78pqcnv+kJeRY7iUeKWZHkwGJ18NNpB7uOlY9L7dy8jJBGTni7O3FnB2e6tDDjUzP91aWs7/jXrE840Wo0zz18A02rnapi7OqJDE5BlbGrWZzIKsI1ILzWHlmTyYQJO/Ya+bGwsPC8ZXh4msBeQlGNdGwvLAR8uOi8KN+beP7/brpII0hLP8bzL04lIKAxTz/5BCPj7mXYnUMICAhgUfzHfP3NuoseQ0RERORaaJDQWpWvl4kB15kYcF0DF2I/xKK3FnIwdBRT/nBDLQHURESnSDx27SEpazBNz9xFz9rDtjRX2t5/ntv1IaEEkEhaej5EnBkikM6ulNPnLaVJVHM8Vh5m3yE73aPOHLWQQykZEHwdYVc7Awtwc3Or/DorK5udu/Yw8Jb+lSsFjIy7F4Cvv1mHq6ke/1AQERERuQR6xmmFn75eyPqMALrfGEBWSir7qr7S8gHw7DyEfiHpfPruh6xPOsTBpG+Z++4K0gL6cGe38yTJgHZ0bwUpKz9m/cEs8rIOkTBvIftodN5aTDGD6ReaT0L8QralZZGXd4J9X3/Eoh9MxNzW574SXMkAACAASURBVKomYJ1x8839MLmeDaMpKam1tnN1ceGWAf3r4IwiIiIiV67Be1qNwU56yjFKgA3//icban4cNZp/PHkDnqZQ7p4wDv77GZ+/+zr5NCI0pg9//M1dFxhjGsLtDz9A1vuf8enMqSzyaU77Afcy0mchr28+3/MCQrl7wqN4LP6YT9+YSlaRKx7Brej+4BOMPM/Eqst1c7+b2LBhI+nHjgGwa/cenn/xJTp36sTIuHsASEzcSUCTAG7ud/GhBiIiIiL1ySk797TDYrEQ2iy4oWv55bLnk2f3wLdyPK6dve+/wFsnBvGXyYNrWdv12igsLOJvr7xKVlY2JSUlldunvPgcny9fQWZGJpOeeUoPFxAREZEGkX48Ay8vL5ydnRVa618W69+YxoKs64j7zRBiQlzJT1rBgvg9eMQ+x/O3hDR0gaxb/y2rV3+NvaR8tpivjw+9e/dSD6uIiIg0KIXWay3vB77872d8nXKM/CJXPAKCaXvTvdx/W2SNp2uJiIiIyBkKrSIiIiJieFVDq1YPEBERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNzPfNF4B0DGrIOEREREZFqds75X+XXlaHV2d2tQYoREREREbkYDQ8QEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEREREcNTaBURERERw1NoFRERERHDU2gVEWkwJq4fOoWN8z4j47+L2faXJxkT41/5qVv350j5+EtS/nQjbg1YpYiIEbg2dAEiIr9akWN5a2wvIgEw0yJmEK/+5UbGbV3BrLVptI/tii+w92QaxQ1bqYhIg1NoFRFpIDG9uxEJ5KUsYcqSg7TpH8eDPcKI7BHHWz0qGtkO8M2m9IYsU0TEEBRaRUQahInIoGAgmy/j57Jolx22rWFO5BCeGR3H8Jhg3HIOsHTB33ntcEPXKiLS8Jyyc087LBYLXR9/qKFrERERERGplPjWB3h5eeHs7KyJWCLy8+YWOY6NH39JxpnXe1MYGdjQVV0Kf8b85bPyml8dS0zNj/0G8r//ll/TxvsjGqJAERFDUWgVkZ+14tQ53PfKcvZaKjb492LmpHH08mzQsi5BDglbD2AFaDWc2ZNGcFu4Pz4mL9rEDGTmpPEMMAOksXbrwYYtVUTEADQ8QETqnVv35/j+2X74XqCN1VZAfm4OmSfT2JuSyNK161l73HKBPWqcI3wIsyeN5/YgMwCZO2cRO2MF+6+q8iAm/HUek6OqbrOR+sWz3PJB8vln9Jtu5P/ef4lYr4r3OasZ9cc3WGuv2S6aF//6Co+3Mp/nQDZSV73MkDmJ5F/FVYiI/FxpeICIGI672ZugoDDax/Ri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",
+      "features": [
+        "Personalised sound (self-tuning EQ)",
+        "16-hour battery life",
+        "Active noise cancellation (ANC)",
+        "Wired and wireless"
+      ],
+      "normalFeatures": [
+        "Fit detection",
+        "Customisable touch buttons & dials",
+        "Social mode (transparency)",
+        "Voice calls"
+      ],
+      "link": "./page/ProductView/product-view.html",
+      "button": true,
+      "shipping": true,
+      "payment": true,
+      "paymentMethod": [
+        "VISA",
+        "PayPal",
+        "Klarna",
+        "ApplePay"
+      ],
+      "returns": true,
+      "warranty": true,
+      "page1": 56,
+      "page3": 19,
+      "id": 56
+    }
+  ]
+}

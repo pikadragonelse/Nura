@@ -1,0 +1,10 @@
+.normalFeature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    line-height: 1;
+}
+
+.featureIcon {
+    color: var(--primary-color);
+}
