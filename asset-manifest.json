@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nura/static/css/main.8b32a7df.css",
+    "main.js": "/Nura/static/js/main.290d05e5.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Nura/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Nura/index.html",
+    "main.8b32a7df.css.map": "/Nura/static/css/main.8b32a7df.css.map",
+    "main.290d05e5.js.map": "/Nura/static/js/main.290d05e5.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Nura/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b32a7df.css",
+    "static/js/main.290d05e5.js"
+  ]
+}
