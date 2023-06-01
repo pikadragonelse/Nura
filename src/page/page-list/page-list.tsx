@@ -1,16 +1,16 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import classNames from 'classnames/bind';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import classNames from "classnames/bind";
 
-import { useAppDispatch, useAppSelector } from '../../redux/hook';
-import { setProduct } from '../../redux/product-list-reducer';
+import { useAppDispatch, useAppSelector } from "../../redux/hook";
+import { setProduct } from "../../redux/product-list-reducer";
 
-import { DefaultLayout } from '../default-layout';
-import { ProductList } from '../../component/product-list';
-import { Select } from '../../component/select';
-import { Pagination } from '../../component/pagination';
-import styles from './page-list.module.scss';
-import { Modal } from '../../component/modal';
+import { DefaultLayout } from "../default-layout";
+import { ProductList } from "../../component/product-list";
+import { Select } from "../../component/select";
+import { Pagination } from "../../component/pagination";
+import styles from "./page-list.module.scss";
+import { Modal } from "../../component/modal";
 
 const cl = classNames.bind(styles);
 
@@ -31,7 +31,7 @@ export const PageList = () => {
     const createProduct = (product: any, setLoading: any, setError: any) => {
         setLoading(true);
         axios
-            .post(`http://localhost:8000/listProduct/`, product)
+            .post(`https://anything-three.vercel.app/listProduct/`, product)
             .then(() => {
                 setLoading(false);
                 localStorage.totalProduct++;
@@ -48,11 +48,13 @@ export const PageList = () => {
     const getData = (amountProduct: any) => {
         axios
             .get(
-                `http://localhost:8000/listProduct?page${amountProduct}=${currentPage}&page${amountProduct}=${
+                `https://anything-three.vercel.app/listProduct?page${amountProduct}=${currentPage}&page${amountProduct}=${
                     currentPage + 1
-                }&page${amountProduct}=${currentPage + 2}&page${amountProduct}=${
+                }&page${amountProduct}=${
+                    currentPage + 2
+                }&page${amountProduct}=${
                     currentPage - 1
-                }&page${amountProduct}=${currentPage - 2}`,
+                }&page${amountProduct}=${currentPage - 2}`
             )
             .then((res) => {
                 dispatch(setProduct(res.data));
@@ -66,7 +68,9 @@ export const PageList = () => {
     useEffect(() => {
         if (
             listProduct.filter((item) =>
-                Number(amountProduct) === 1 ? item.page1 === currentPage : item.page3 === currentPage,
+                Number(amountProduct) === 1
+                    ? item.page1 === currentPage
+                    : item.page3 === currentPage
             ).length === 0
         ) {
             getData(amountProduct);
@@ -129,7 +133,7 @@ export const PageList = () => {
                 createProduct={createProduct}
             />
 
-            <div className={cl('pageListContainer')}>
+            <div className={cl("pageListContainer")}>
                 <ProductList
                     currentPage={currentPage}
                     totalPage={totalPage}
@@ -141,19 +145,28 @@ export const PageList = () => {
                 />
 
                 {error !== true ? (
-                    <div className={cl('paginationContainter')}>
+                    <div className={cl("paginationContainter")}>
                         <Pagination
                             handleSetPage={handleChangePage}
                             totalPage={totalPage}
                             increaseCurrentPage={handleIncreaseCurrentPage}
                             decreaseCurrentPage={handleDecreaseCurrentPage}
                             currentPage={currentPage}
-                            fastIncreaseCurrentPage={handleFastIncreaseCurrentPage}
-                            fastDecreaseCurrentPage={handleFastDecreaseCurrentPage}
+                            fastIncreaseCurrentPage={
+                                handleFastIncreaseCurrentPage
+                            }
+                            fastDecreaseCurrentPage={
+                                handleFastDecreaseCurrentPage
+                            }
                         />
-                        <div className={cl('paginationAmountItem')}>
+                        <div className={cl("paginationAmountItem")}>
                             Amount product:
-                            <Select setValue={(value: number) => setAmountProduct(value)} allValue={[1, 3]} />
+                            <Select
+                                setValue={(value: number) =>
+                                    setAmountProduct(value)
+                                }
+                                allValue={[1, 3]}
+                            />
                         </div>
                     </div>
                 ) : (

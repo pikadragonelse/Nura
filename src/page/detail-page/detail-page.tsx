@@ -1,11 +1,11 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-import { DetailInfoProduct } from '../../component/detail-info-product';
-import { ErrorState } from '../../component/error-state';
-import { Modal } from '../../component/modal';
-import { DefaultLayout } from '../default-layout';
+import { DetailInfoProduct } from "../../component/detail-info-product";
+import { ErrorState } from "../../component/error-state";
+import { Modal } from "../../component/modal";
+import { DefaultLayout } from "../default-layout";
 
 export const DetailPage = () => {
     const [productId] = useState(useParams().productId);
@@ -18,13 +18,13 @@ export const DetailPage = () => {
 
     const [product, setProduct] = useState({
         id: 0,
-        name: '',
+        name: "",
         price: 0,
-        desc: '',
-        image: '',
+        desc: "",
+        image: "",
         features: [],
         normalFeatures: [],
-        link: '',
+        link: "",
         button: false,
         shipping: false,
         payment: false,
@@ -41,7 +41,7 @@ export const DetailPage = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8000/listProduct/${productId}`)
+            .get(`https://anything-three.vercel.app/listProduct/${productId}`)
             .then((res) => {
                 setProduct(res.data);
                 setLoading(false);
@@ -55,7 +55,10 @@ export const DetailPage = () => {
     const updateProduct = (product: any, setLoading: any, setError: any) => {
         setLoading(true);
         axios
-            .put(`http://localhost:8000/listProduct/${product.id}`, product)
+            .put(
+                `https://anything-three.vercel.app/listProduct/${product.id}`,
+                product
+            )
             .then(() => {
                 setCheckUpdate((prev) => !prev);
                 setIsOpenUpdateModal(false);
@@ -81,7 +84,11 @@ export const DetailPage = () => {
             {error === true ? (
                 <ErrorState />
             ) : (
-                <DetailInfoProduct product={product} handleOpenModal={handleOpenModal} loading={loading} />
+                <DetailInfoProduct
+                    product={product}
+                    handleOpenModal={handleOpenModal}
+                    loading={loading}
+                />
             )}
         </DefaultLayout>
     );

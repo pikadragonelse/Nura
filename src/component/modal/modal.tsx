@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
-import classNames from 'classnames/bind';
-import axios from 'axios';
+import { useEffect, useState } from "react";
+import classNames from "classnames/bind";
+import axios from "axios";
 
-import { Overlay } from './overlay';
-import { Notification } from '../notification';
-import { FormInput } from './form-input';
-import styles from './modal.module.scss';
-import { FormDetail } from './form-detail';
-import { FormCompare } from './form-compare';
+import { Overlay } from "./overlay";
+import { Notification } from "../notification";
+import { FormInput } from "./form-input";
+import styles from "./modal.module.scss";
+import { FormDetail } from "./form-detail";
+import { FormCompare } from "./form-compare";
 
 const cl = classNames.bind(styles);
 
@@ -33,9 +33,9 @@ export const Modal = (props: {
     const getProductLastPage = (numberProductOnPage: any) => {
         axios
             .get(
-                `http://localhost:8000/listProduct?page${numberProductOnPage}=${Math.ceil(
-                    localStorage.totalProduct / numberProductOnPage,
-                )}`,
+                `https://anything-three.vercel.app/listProduct?page${numberProductOnPage}=${Math.ceil(
+                    localStorage.totalProduct / numberProductOnPage
+                )}`
             )
             .then((res) => {
                 if (numberProductOnPage === 1) {
@@ -81,14 +81,21 @@ export const Modal = (props: {
     };
 
     return (
-        <div className={cl('modal', `${props.isOpen === true ? `openModal` : ''}`)}>
-            <div className={cl('modalOverlay')}>
+        <div
+            className={cl(
+                "modal",
+                `${props.isOpen === true ? `openModal` : ""}`
+            )}
+        >
+            <div className={cl("modalOverlay")}>
                 <Overlay />
             </div>
 
             <Notification
                 active={activeErrorNoti}
-                title={props.type === 'createForm' ? 'Fail create' : 'Fail update'}
+                title={
+                    props.type === "createForm" ? "Fail create" : "Fail update"
+                }
                 content="Something went wrong, please try again!"
                 errorState={true}
                 setClose={() => {
@@ -97,15 +104,15 @@ export const Modal = (props: {
                 }}
             />
 
-            <div className={cl('modalBody')}>
-                {props.type === 'compareForm' ? (
+            <div className={cl("modalBody")}>
+                {props.type === "compareForm" ? (
                     <FormCompare
                         title={props.title}
                         productNow={props.product}
                         handleCloseModal={props.handleCloseModal}
                         productCompare={props.productCompare}
                     />
-                ) : props.type === 'detailForm' ? (
+                ) : props.type === "detailForm" ? (
                     <FormDetail
                         title={props.title}
                         feature={props.feature}
