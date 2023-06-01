@@ -13,6 +13,7 @@ import styles from "./sidebar.module.scss";
 const cl = classNames.bind(styles);
 
 export const Sidebar = () => {
+    const arr = [];
     return (
         <div className={cl("sidebar", "sidebarHome")}>
             <ul className={cl("sidebarListContent")}>
