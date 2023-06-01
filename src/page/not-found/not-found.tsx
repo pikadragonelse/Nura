@@ -17,7 +17,6 @@ export const NotFound = () => {
                 You can either return to the previous page or visit our
                 homepage.
             </p>
-
             <Button className={cl("notFoundButton")} to="/Nura/">
                 Back to home
             </Button>
