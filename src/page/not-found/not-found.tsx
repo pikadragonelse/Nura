@@ -18,7 +18,7 @@ export const NotFound = () => {
                 homepage.
             </p>
             <Button className={cl("notFoundButton")} to="/Nura/">
-                Back to home
+                Back home
             </Button>
         </Wrapper>
     );
