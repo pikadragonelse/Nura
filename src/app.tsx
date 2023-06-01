@@ -9,7 +9,7 @@ export const App = () => {
     return (
         <>
             <Routes>
-                <Route path="/Nura" element={<Home />}></Route>
+                <Route path="/Nura/" element={<Home />}></Route>
                 <Route path="/page-list" element={<PageList />} />
                 <Route
                     path="/detail-page/:productId"
