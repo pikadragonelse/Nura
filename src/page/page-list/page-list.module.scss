@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: var(--spacing-md);
 }
 
 .paginationContainter {
@@ -20,5 +21,5 @@
     justify-content: center;
     position: absolute;
     line-height: 1;
-    right: calc(2 * var(--spacing-vr-lg));
+    right: calc(var(--spacing-vr-lg));
 }

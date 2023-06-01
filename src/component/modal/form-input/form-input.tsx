@@ -1,11 +1,15 @@
-import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHammer, faHurricane, faXmarkCircle } from '@fortawesome/free-solid-svg-icons';
+import classNames from "classnames/bind";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faHammer,
+    faHurricane,
+    faXmarkCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
-import { Button } from '../../button';
-import { FormInfoItem } from '../form-info-item';
-import styles from './form-input.module.scss';
-import { LoadingState } from '../../loading-state';
+import { Button } from "../../button";
+import { FormInfoItem } from "../form-info-item";
+import styles from "./form-input.module.scss";
+import { LoadingState } from "../../loading-state";
 
 const cl = classNames.bind(styles);
 
@@ -24,13 +28,16 @@ export const FormInput = (props: {
     loading: any;
 }) => {
     const inputList = [
-        { title: 'Name', type: 'text' },
-        { title: 'Price', type: 'text' },
-        { title: 'Description', type: 'text' },
-        { title: 'Image', type: 'file' },
+        { title: "Name", type: "text" },
+        { title: "Price", type: "text" },
+        { title: "Description", type: "text" },
+        { title: "Image", type: "file" },
     ];
 
-    const checkAmountOfLastPage = (numberProductOnPage: number, listProduct: any) => {
+    const checkAmountOfLastPage = (
+        numberProductOnPage: number,
+        listProduct: any
+    ) => {
         const totalProduct = Number(localStorage.totalProduct);
 
         let listOfPage = {
@@ -50,10 +57,10 @@ export const FormInput = (props: {
     const getDataFromFormToCreate = (event: any, eventTarget: any) => {
         event.preventDefault();
 
-        const file = eventTarget['Image'].files[0];
+        const file = eventTarget["Image"].files[0];
         try {
-            if (file.type && !file.type.startsWith('image/')) {
-                console.log('File is not an image.', file.type, file);
+            if (file.type && !file.type.startsWith("image/")) {
+                console.log("File is not an image.", file.type, file);
                 return;
             }
 
@@ -61,32 +68,34 @@ export const FormInput = (props: {
 
             reader.onload = (e) => {
                 const data = {
-                    name: eventTarget['Name'].value,
-                    price: Number(eventTarget['Price'].value),
-                    desc: eventTarget['Description'].value,
+                    name: eventTarget["Name"].value,
+                    price: Number(eventTarget["Price"].value),
+                    desc: eventTarget["Description"].value,
                     image: e.target?.result,
                     features: [
-                        'Personalised sound (self-tuning EQ)',
-                        '16-hour battery life',
-                        'Active noise cancellation (ANC)',
-                        'Wired and wireless',
+                        "Personalised sound (self-tuning EQ)",
+                        "16-hour battery life",
+                        "Active noise cancellation (ANC)",
+                        "Wired and wireless",
                     ],
                     normalFeatures: [
-                        'Fit detection',
-                        'Customisable touch buttons & dials',
-                        'Social mode (transparency)',
-                        'Voice calls',
+                        "Fit detection",
+                        "Customisable touch buttons & dials",
+                        "Social mode (transparency)",
+                        "Voice calls",
                     ],
-                    link: './page/ProductView/product-view.html',
+                    link: "./page/ProductView/product-view.html",
                     button: true,
                     shipping: true,
                     payment: true,
-                    paymentMethod: ['VISA', 'PayPal', 'Klarna', 'ApplePay'],
+                    paymentMethod: ["VISA", "PayPal", "Klarna", "ApplePay"],
                     returns: true,
                     warranty: true,
 
-                    page1: checkAmountOfLastPage(1, props.listProductLastPage1).page1,
-                    page3: checkAmountOfLastPage(3, props.listProductLastPage3).page3,
+                    page1: checkAmountOfLastPage(1, props.listProductLastPage1)
+                        .page1,
+                    page3: checkAmountOfLastPage(3, props.listProductLastPage3)
+                        .page3,
                 };
 
                 props.handleCreateProduct(data);
@@ -103,9 +112,9 @@ export const FormInput = (props: {
         try {
             const data = {
                 id: productInfo.id,
-                name: eventTarget['Name'].value,
-                price: Number(eventTarget['Price'].value),
-                desc: eventTarget['Description'].value,
+                name: eventTarget["Name"].value,
+                price: Number(eventTarget["Price"].value),
+                desc: eventTarget["Description"].value,
                 image: productInfo.image,
                 features: productInfo.features,
                 normalFeatures: productInfo.normalFeatures,
@@ -130,23 +139,32 @@ export const FormInput = (props: {
         <form
             onSubmit={(event) => {
                 const form = event.target;
-                props.type === 'createForm'
+                props.type === "createForm"
                     ? getDataFromFormToCreate(event, form)
                     : getDataFromFormToUpdate(event, form);
             }}
-            className={cl('formInput', `${props.type}`)}
+            className={cl("formInput", `${props.type}`)}
         >
-            <FontAwesomeIcon className={cl('formInputIcon')} icon={faXmarkCircle} onClick={props.handleCloseModal} />
+            <FontAwesomeIcon
+                className={cl("formInputIcon")}
+                icon={faXmarkCircle}
+                onClick={props.handleCloseModal}
+            />
 
-            <div className={cl('loadingContainerModal', `${props.loading === true ? 'activeLoading' : ''}`)}>
+            <div
+                className={cl(
+                    "loadingContainerModal",
+                    `${props.loading === true ? "activeLoading" : ""}`
+                )}
+            >
                 <LoadingState />
             </div>
 
-            <div className={cl('formInputHeader')}>
-                <h1 className={cl('formInputHeading')}>{props.title}</h1>
+            <div className={cl("formInputHeader")}>
+                <h1 className={cl("formInputHeading")}>{props.title}</h1>
             </div>
 
-            <div className={cl('formInputInfo')}>
+            <div className={cl("formInputInfo")}>
                 {inputList.map((item, index) => (
                     <FormInfoItem
                         form={props.type}
@@ -159,15 +177,21 @@ export const FormInput = (props: {
                 ))}
             </div>
 
-            <div className={cl('formInputFooter')}>
+            <div className={cl("formInputFooter")}>
                 <Button>Reset</Button>
-                <div className={cl('containerFeatureButton')}>
+                <div className={cl("containerFeatureButton")}>
                     <Button primary={true}>
                         {props.feature}&nbsp;
-                        {props.type === 'createForm' ? (
-                            <FontAwesomeIcon className={cl('featureCreateButtonIcon')} icon={faHurricane} />
+                        {props.type === "createForm" ? (
+                            <FontAwesomeIcon
+                                className={cl("featureCreateButtonIcon")}
+                                icon={faHurricane}
+                            />
                         ) : (
-                            <FontAwesomeIcon className={cl('featureEditButtonIcon')} icon={faHammer} />
+                            <FontAwesomeIcon
+                                className={cl("featureEditButtonIcon")}
+                                icon={faHammer}
+                            />
                         )}
                     </Button>
                 </div>

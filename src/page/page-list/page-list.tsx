@@ -24,7 +24,7 @@ export const PageList = () => {
     const dispatch = useAppDispatch();
 
     const [checkCreate, setCheckCreate] = useState(0);
-    // localStorage.totalProduct = 55; //Use localstorage to hard save total product because server don't support -> 55 is default value of database
+    localStorage.totalProduct = 55; //Use localstorage to hard save total product because server don't support -> 55 is default value of database
     const [amountProduct, setAmountProduct] = useState(1);
     const totalPage = Math.ceil(localStorage.totalProduct / amountProduct);
 
@@ -57,6 +57,7 @@ export const PageList = () => {
                 }&page${amountProduct}=${currentPage - 2}`
             )
             .then((res) => {
+                console.log(res.data);
                 dispatch(setProduct(res.data));
                 setLoading(false);
             })

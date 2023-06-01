@@ -1,9 +1,9 @@
-import classNames from 'classnames/bind';
+import classNames from "classnames/bind";
 
-import styles from './overlay.module.scss';
+import styles from "./overlay.module.scss";
 
 const cl = classNames.bind(styles);
-
-export const Overlay = () => {
-    return <div className={cl('overlay')}></div>;
+export type Overlay = { onClick?: any };
+export const Overlay = ({ onClick }: Overlay) => {
+    return <div onClick={onClick} className={cl("overlay")}></div>;
 };

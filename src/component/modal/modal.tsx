@@ -11,7 +11,7 @@ import { FormCompare } from "./form-compare";
 
 const cl = classNames.bind(styles);
 
-export const Modal = (props: {
+export type Modal = {
     title?: any;
     type: any;
     feature?: string;
@@ -22,7 +22,19 @@ export const Modal = (props: {
     updateProduct?: any;
     product?: any;
     productCompare?: any;
-}) => {
+};
+
+export const Modal = ({
+    title,
+    type,
+    feature,
+    isOpen,
+    handleCloseModal,
+    createProduct,
+    updateProduct,
+    product,
+    productCompare,
+}: Modal) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [activeErrorNoti, setActiveErrorNoti] = useState(false);
@@ -55,7 +67,7 @@ export const Modal = (props: {
         getProductLastPage(3);
         getProductLastPage(5);
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [props.isOpen]);
+    }, [isOpen]);
 
     const checkErrorModal = () => {
         if (error === true) {
@@ -71,31 +83,24 @@ export const Modal = (props: {
     }, [error]);
 
     const handleCreateProduct = (data: any) => {
-        props.createProduct(data, setLoading, setError);
+        createProduct(data, setLoading, setError);
         checkErrorModal();
     };
 
     const handleUpdateProduct = (data: any) => {
-        props.updateProduct(data, setLoading, setError);
+        updateProduct(data, setLoading, setError);
         checkErrorModal();
     };
 
     return (
-        <div
-            className={cl(
-                "modal",
-                `${props.isOpen === true ? `openModal` : ""}`
-            )}
-        >
-            <div className={cl("modalOverlay")}>
-                <Overlay />
+        <div className={cl("modal", `${isOpen === true ? `openModal` : ""}`)}>
+            <div className={cl("modalOverlay")} onClick={handleCloseModal}>
+                <Overlay onClick={handleCloseModal} />
             </div>
 
             <Notification
                 active={activeErrorNoti}
-                title={
-                    props.type === "createForm" ? "Fail create" : "Fail update"
-                }
+                title={type === "createForm" ? "Fail create" : "Fail update"}
                 content="Something went wrong, please try again!"
                 errorState={true}
                 setClose={() => {
@@ -105,19 +110,19 @@ export const Modal = (props: {
             />
 
             <div className={cl("modalBody")}>
-                {props.type === "compareForm" ? (
+                {type === "compareForm" ? (
                     <FormCompare
-                        title={props.title}
-                        productNow={props.product}
-                        handleCloseModal={props.handleCloseModal}
-                        productCompare={props.productCompare}
+                        title={title}
+                        productNow={product}
+                        handleCloseModal={handleCloseModal}
+                        productCompare={productCompare}
                     />
-                ) : props.type === "detailForm" ? (
+                ) : type === "detailForm" ? (
                     <FormDetail
-                        title={props.title}
-                        feature={props.feature}
-                        product={props.product}
-                        handleCloseModal={props.handleCloseModal}
+                        title={title}
+                        feature={feature}
+                        product={product}
+                        handleCloseModal={handleCloseModal}
                         loading={loading}
                     />
                 ) : (
@@ -126,13 +131,13 @@ export const Modal = (props: {
                         listProductLastPage3={listProductLastPage3}
                         handleCreateProduct={handleCreateProduct}
                         handleUpdateProduct={handleUpdateProduct}
-                        handleCloseModal={props.handleCloseModal}
+                        handleCloseModal={handleCloseModal}
                         setError={setError}
-                        title={props.title}
-                        isOpen={props.isOpen}
-                        type={props.type}
-                        product={props.product}
-                        feature={props.feature}
+                        title={title}
+                        isOpen={isOpen}
+                        type={type}
+                        product={product}
+                        feature={feature}
                         loading={loading}
                     />
                 )}
