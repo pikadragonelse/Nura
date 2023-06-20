@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Nura/static/css/main.7845f6bd.css",
-    "main.js": "/Nura/static/js/main.7d036e3a.js",
+    "main.css": "/Nura/static/css/main.fb9e932c.css",
+    "main.js": "/Nura/static/js/main.69a21979.js",
     "static/js/787.28cb0dcd.chunk.js": "/Nura/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/Nura/index.html",
-    "main.7845f6bd.css.map": "/Nura/static/css/main.7845f6bd.css.map",
-    "main.7d036e3a.js.map": "/Nura/static/js/main.7d036e3a.js.map",
+    "main.fb9e932c.css.map": "/Nura/static/css/main.fb9e932c.css.map",
+    "main.69a21979.js.map": "/Nura/static/js/main.69a21979.js.map",
     "787.28cb0dcd.chunk.js.map": "/Nura/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7845f6bd.css",
-    "static/js/main.7d036e3a.js"
+    "static/css/main.fb9e932c.css",
+    "static/js/main.69a21979.js"
   ]
 }
