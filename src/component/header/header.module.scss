@@ -2,15 +2,30 @@
     display: flex;
     align-items: center;
     height: 90px;
-    padding: var(--spacing-md) 0;
-    background-color: var(--black);
+    min-height: 90px;
+    font-size: var(--font-s-md);
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    transition: background-color 0.1s ease-in-out,  backdrop-filter 0.1s ease-in-out;
+    backdrop-filter: blur(0);
+}
+
+.wrapperHeader.background {
+    background-color: var(--transparent-dark);
+    backdrop-filter: blur(5px);
 }
 
 .headerNavbar {
     display: flex;
     align-items: center;
-    font-size: var(--font-s-md);
-    padding: 0 var(--spacing-lg);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mainSection {
+    display: flex;
+    margin-left: calc(2 * var(--spacing-lg));
 }
 
 .navInfo {
@@ -20,7 +35,6 @@
 
 .logo {
     margin-right: var(--spacing-lg);
-
     &:hover {
         opacity: 0.9;
     }
@@ -33,26 +47,16 @@
 }
 
 .navCart {
-    position: absolute;
-    right: var(--spacing-md);
     cursor: pointer;
+    margin-right: calc(2 * var(--spacing-lg));
 
     &:hover {
         opacity: var(--opacity-lt);
     }
 
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        border-bottom: 2px solid var(--contrast-color);
-        opacity: 0;
-        z-index: var(--z-high);
+    .cartIcon {
+        margin-right: var(--spacing-sm);
     }
-
-    &:hover::before {
-        opacity: 1;
-    }
+    
 }
+

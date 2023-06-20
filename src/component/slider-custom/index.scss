@@ -1,0 +1,117 @@
+.slider-custom {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    min-height: 600px;
+    border-radius: var(--border-radius-md-1);
+    color: var(--contrast-color);
+    padding: var(--spacing-md);
+    font-size: var(--font-s-md);
+    overflow: hidden;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: unset;
+    transition: background-image 0.2s ease-in-out;
+    margin-top: calc( 2.2 * var(--spacing-lg));
+
+    .name-product {
+        font-size: calc(2 * var(--font-s-lg-2));
+        max-width: 300px;
+        height: 100px;
+    }
+
+    .description {
+        font-size: var(--font-s-lg);
+        max-height: 500px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--transparent-dark);
+    }
+
+    .content {
+        background-color: #8b8b8b18;
+        backdrop-filter: blur(10px);
+        flex: 0.3;
+        height: 392px;
+        position: relative;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: var(--spacing-b-sm);
+        border-radius: var(--border-radius-md);
+    }
+
+    .slider-list {
+        position: relative;
+        flex: 0.7;
+        display: flex;
+
+        .slider-list-container {
+            position: relative;
+            margin-left: auto;
+            bottom: calc(2.8 * var(--spacing-md));
+            display: flex;
+            align-items: end;
+            width: 400px;
+        }
+
+        .slider-list-img {
+            position: absolute;
+            filter: blur(4px);
+            transform: scale(0.9);
+        }
+
+        .active {
+            filter: blur(0);
+            transform: scale(1);
+        }
+
+        .order-left {
+            left: 0;
+            z-index: 2;
+        }
+
+        .order-now {
+            left: 90px;
+            z-index: 3;
+        }
+
+        .order-right {
+            left: 170px;
+            z-index: 1;
+        }
+
+        .slider-custom-control {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .btn-next {
+            position: relative;
+            // right: calc(2.8 * var(--spacing-vr-lg));
+        }
+
+        .control-line {
+            width: 300px;
+            border-bottom: 3px solid var(--contrast-color);
+        }
+    }
+
+
+}

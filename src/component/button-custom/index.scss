@@ -1,0 +1,18 @@
+.btn-custom {
+    border: 1px solid var(--contrast-color);
+    border-radius: var(--border-radius-mch);
+    background-color: unset;
+    cursor: pointer;
+    padding: var(--spacing-sm) var(--spacing-b-sm);
+    min-width: 100px;
+    max-width: 300px;
+    font-size: var(--font-size-md);
+    color: var(--contrast-color);
+    transition: all ease 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 20px var(--contrast-color), inset 300px 0 var(--contrast-color);
+        color: var(--main-color);
+    }
+
+}

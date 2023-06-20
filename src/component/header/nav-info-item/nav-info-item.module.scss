@@ -3,10 +3,15 @@
     font-size: var(--font-s-md);
     cursor: pointer;
     color: var(--contrast-color);
-    text-decoration: none;
+    text-decoration: solid;
+    transition: all 0.1s ease-in-out;
 
     &:hover {
-        opacity: var(--opacity-lt);
+        color: var(--contrast-str-color);
         text-decoration: underline;
     }
 }
+
+
+
+

@@ -1,9 +1,19 @@
-import classNames from 'classnames/bind';
+import classNames from "classnames/bind";
 
-import styles from './wrapper.module.scss';
+import styles from "./wrapper.module.scss";
 
 const cl = classNames.bind(styles);
 
-export const Wrapper = (props: { children: any; type: any; className?: any }) => {
-    return <div className={cl(`${props.type}`, `${props.className}`)}>{props.children}</div>;
+export type Wrapper = {
+    children: any;
+    type: any;
+    className?: any;
+    id?: string;
+};
+export const Wrapper = ({ children, type, className, id }: Wrapper) => {
+    return (
+        <div id={id} className={cl(`${type}`, `${className}`)}>
+            {children}
+        </div>
+    );
 };

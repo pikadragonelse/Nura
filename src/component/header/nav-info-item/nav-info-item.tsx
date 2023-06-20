@@ -1,13 +1,17 @@
-import classNames from 'classnames/bind';
+import classNames from "classnames/bind";
 
-import styles from './nav-info-item.module.scss';
+import styles from "./nav-info-item.module.scss";
 
 const cl = classNames.bind(styles);
-
-export const NavInfoItem = (props: { content: any; href?: any }) => {
+export type NavInfoItem = {
+    content: any;
+    href?: any;
+    className?: string;
+};
+export const NavInfoItem = ({ content, href, className }: NavInfoItem) => {
     return (
-        <a href={props.href} className={cl('navInfoItem')}>
-            {props.content}
+        <a href={href} className={cl("navInfoItem", className)}>
+            {content}
         </a>
     );
 };

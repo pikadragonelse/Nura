@@ -1,15 +1,19 @@
-import { Header } from '../../component/header';
-import { Sidebar } from '../../component/sidebar';
-import { Wrapper } from '../../component/wrapper';
+import { Footer } from "../../component/footer";
+import { Header } from "../../component/header";
+import { Sidebar } from "../../component/sidebar";
+import { Wrapper } from "../../component/wrapper";
 
-export const DefaultLayout = (props: { children: any }) => {
+export type DefaultLayout = { children: any; className?: string };
+export const DefaultLayout = ({ children, className }: DefaultLayout) => {
     return (
-        <Wrapper type="wrapperPage">
+        <Wrapper id="container" type="wrapperPage">
             <Header />
             <Wrapper type="wrapperMain">
-                <Sidebar />
-                <Wrapper type="wrapperContent">{props.children}</Wrapper>
+                <Wrapper type={`wrapperContent`} className={className}>
+                    {children}
+                </Wrapper>
             </Wrapper>
+            <Footer />
         </Wrapper>
     );
 };

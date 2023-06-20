@@ -19,7 +19,7 @@
     --main-color: #272727;
     --sub-color: rgb(71, 71, 71);
     --sub-light-color: rgb(95, 95, 95);
-    --transparent-dark: rgba(75, 75, 75, 0.356);
+    --transparent-dark: rgba(20, 20, 20, 0.507);
     --transparent-light: rgba(206, 206, 206, 0.356);
     --primary-color: rgb(86, 88, 221);
     --dark-primary-color: rgb(56, 57, 145);
@@ -42,6 +42,8 @@
     /* border */
     --border-radius-lt: 4px;
     --border-radius-md: 14px;
+    --border-radius-md-1: 30px;
+
     --border-radius-mch: 9999px;
 
     /* opacity */
@@ -66,7 +68,25 @@
 html {
     font-size: 62.5%;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: var(--contrast-color);
+        border-radius: var(--border-radius-md);
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: var(--border-radius-md);
+        background-color: var(--contrast-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: var(--border-radius-md);
+        background-color: var(--sub-color);
+    }
+    background-color: var(--main-color);
+
 }
 
 body {
