@@ -26,7 +26,7 @@ export const ProductListItem = ({ product }: ProductListItem) => {
     const productCompare = useAppSelector((state) => state.compareProduct);
 
     return (
-        <li className={cl("product", "ourListItem ")}>
+        <li className={cl("product")}>
             <span
                 className={cl(
                     "compareMark",

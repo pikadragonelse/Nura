@@ -6,7 +6,11 @@ import styles from "./product-list.module.scss";
 import { Collapse } from "../collapse";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { setProduct } from "../../redux/product-list-reducer";
+import {
+    ProductListState,
+    ProductType,
+    setProduct,
+} from "../../redux/product-list-reducer";
 import { useAppDispatch, useAppSelector } from "../../redux/hook";
 import { Pagination } from "../pagination";
 import { ProductListItem } from "./product-list-item";
@@ -19,6 +23,7 @@ export const ProductList = ({}) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [loading, setLoading] = useState(true);
     const [amountProduct, setAmountProduct] = useState(5);
+    const [listShow, setListShow] = useState<ProductListState>([]);
 
     const listProduct = useAppSelector((state) => state.productList);
     const dispatch = useAppDispatch();
@@ -29,11 +34,11 @@ export const ProductList = ({}) => {
         axios
             .get(
                 `https://anything-three.vercel.app/listProduct?page${amountProduct}=${currentPage}&page${amountProduct}=${
+                    currentPage - 1
+                }&page${amountProduct}=${
                     currentPage + 1
                 }&page${amountProduct}=${
                     currentPage + 2
-                }&page${amountProduct}=${
-                    currentPage - 1
                 }&page${amountProduct}=${currentPage - 2}`
             )
             .then((res) => {
@@ -44,6 +49,41 @@ export const ProductList = ({}) => {
                 setErrorPage(true);
             });
     };
+
+    const getDataShow = () => {
+        const listTemp: ProductListState = [];
+        listProduct.map((item) => {
+            if (amountProduct === 5) {
+                if (item.page5 === currentPage) {
+                    listTemp.push(item);
+                }
+            }
+            if (amountProduct === 10) {
+                if (item.page10 === currentPage) {
+                    listTemp.push(item);
+                }
+            }
+        });
+        setListShow(listTemp as any);
+    };
+
+    useEffect(() => {
+        const checkCurrentPage = listProduct.some((item: ProductType) => {
+            if (amountProduct === 5) {
+                console.log(currentPage, item.page5);
+                return item.page5 === currentPage;
+            }
+            if (amountProduct === 10) {
+                return item.page10 === currentPage;
+            }
+        });
+
+        if (checkCurrentPage === false) {
+            getData(amountProduct);
+        } else {
+            getDataShow();
+        }
+    }, [currentPage, listProduct]);
 
     const handleChangePage = (number: any) => {
         if (number !== currentPage) {
@@ -83,7 +123,6 @@ export const ProductList = ({}) => {
     useEffect(() => {
         setCurrentPage(1);
         getData(amountProduct);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [amountProduct]);
 
     return (
@@ -114,9 +153,17 @@ export const ProductList = ({}) => {
                     </div>
                     <div className={cl("mainList")}>
                         <ul className={cl("listProductContainer")}>
-                            {listProduct.map((item) => (
+                            {listShow.map((item) => (
                                 <ProductListItem key={item.id} product={item} />
                             ))}
+                            {listShow.length === 5 ? (
+                                <div className={cl("emptyProduct")}></div>
+                            ) : (
+                                <>
+                                    <div className={cl("emptyProduct")}></div>
+                                    <div className={cl("emptyProduct")}></div>
+                                </>
+                            )}
                         </ul>
                         <div className={cl("footerList")}>
                             <div className={cl("paginationContainter")}>
@@ -145,7 +192,7 @@ export const ProductList = ({}) => {
                                 </span>
                                 <Collapse
                                     title={`${amountProduct}`}
-                                    contentChild={["05", 10]}
+                                    contentChild={[5, 10]}
                                     className={cl(
                                         "changeAmoutItem",
                                         "paginationContainterItem"

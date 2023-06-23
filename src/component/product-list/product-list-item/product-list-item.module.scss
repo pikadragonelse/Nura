@@ -9,14 +9,9 @@
     border-radius: var(--border-radius-md);
     color: var(--main-color);
 
-    &:last-child {
-        margin-right: 0;
-    }
-
     &:hover .productImageWrapper::before {
         opacity: 1;
     }
-
 
     .productHeading {
         display: -webkit-box;
@@ -36,7 +31,6 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        margin-bottom: var(--spacing-sm);
 
         .productImage {
             width: 100%;
@@ -137,10 +131,6 @@
 
 }
 
-
-
-
-
 .compareMark {
     position: absolute;
     z-index: var(--z-higher);
@@ -153,6 +143,7 @@
     display: none;
     color: var(--contrast-color);
     font-size: var(--font-s-sm);
+    user-select: none;
 
     &::before {
         content: '';

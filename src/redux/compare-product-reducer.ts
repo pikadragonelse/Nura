@@ -17,8 +17,8 @@ type productType = {
     paymentMethod: object;
     returns: boolean;
     warranty: boolean;
-    page1: number;
-    page3: number;
+    page5: number;
+    page10: number;
 };
 
 export const initialState = {
@@ -36,8 +36,8 @@ export const initialState = {
     paymentMethod: {},
     returns: false,
     warranty: false,
-    page1: 0,
-    page3: 0,
+    page5: 0,
+    page10: 0
 };
 
 export const compareProductSlice = createSlice({

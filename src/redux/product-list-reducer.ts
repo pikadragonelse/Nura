@@ -17,8 +17,8 @@ export type ProductListState = {
     paymentMethod: object;
     returns: boolean;
     warranty: boolean;
-    page1: number;
-    page3: number;
+    page5: number;
+    page10: number;
 }[];
 
 export type ProductType = {
@@ -36,8 +36,8 @@ export type ProductType = {
     paymentMethod: object;
     returns: boolean;
     warranty: boolean;
-    page1: number;
-    page3: number;
+    page5: number;
+    page10: number;
 };
 
 const initialState: ProductListState = [];

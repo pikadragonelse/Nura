@@ -37,7 +37,7 @@ export const Pagination = ({
     const rangeToTruncate = 2;
 
     const handlePagination = () => {
-        let pageShow = [1];
+        let pageShow: Array<number> = [];
 
         if (totalPage >= 2 * range - 1) {
             for (let pos = 1; pos <= totalPage; pos++) {

@@ -45,6 +45,10 @@
             margin-bottom: var(--spacing-md);
         }
 
+        .emptyProduct {
+            flex: calc(1/3);
+        }
+
         .footerList {
             display: flex;
 

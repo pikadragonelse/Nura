@@ -7,6 +7,8 @@ import { ErrorState } from "../../component/error-state";
 import { Modal } from "../../component/modal";
 import { DefaultLayout } from "../default-layout";
 
+import "./index.scss";
+
 export const DetailPage = () => {
     const [productId] = useState(useParams().productId);
 
@@ -71,7 +73,7 @@ export const DetailPage = () => {
     };
 
     return (
-        <DefaultLayout>
+        <DefaultLayout className="detail-page">
             <Modal
                 isOpen={isOpenUpdateModal}
                 title="Update product"
