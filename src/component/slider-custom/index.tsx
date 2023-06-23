@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./index.scss";
 import { ButtonCustom } from "../button-custom";
 import { SliderImage } from "./slider-image";
+import { Link } from "react-router-dom";
 
 const imgMap: Record<number, string> = {
     1: process.env.PUBLIC_URL + "/media/introduction/nura-true-intro.jpeg",
@@ -81,7 +82,9 @@ export const SliderCustom = ({
             <div className="content">
                 <h1 className="name-product">{nameProduct}</h1>
                 <p className="description">{descProduct}</p>
-                <ButtonCustom>Go to detail</ButtonCustom>
+                <Link to={`/detail-page/${order}`} className="link-detail">
+                    <ButtonCustom>Go to detail</ButtonCustom>
+                </Link>
             </div>
             <div className="slider-list">
                 <div className="slider-list-container">
