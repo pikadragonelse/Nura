@@ -3,23 +3,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: var(--spacing-md);
-}
-
-.paginationContainter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-md);
-}
-
-.paginationAmountItem {
-    display: flex;
-    font-size: var(--font-s-md);
-    gap: var(--spacing-sm);
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    line-height: 1;
-    right: calc(var(--spacing-vr-lg));
+    margin-top: calc( 3 * var(--spacing-lg));
+    width: 100%;
 }

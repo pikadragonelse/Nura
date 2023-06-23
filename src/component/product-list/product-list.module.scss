@@ -1,13 +1,91 @@
 .productList {
     position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: var(--spacing-b-sm) 0;
+    gap: var(--spacing-lg);
+    width: 100%;
+    padding: 0 var(--spacing-lg);
+    height: auto;
+
+
+    .categories {
+        position: relative;
+        flex: 0.2;
+        background-color: var(--contrast-color);
+        border-radius: var(--border-radius-md);
+        background-color: var(--sub-color);
+        padding: var(--spacing-md);
+        height: max-content;
+
+        .categoriesListItem {
+            font-size: var(--font-s-lg);
+            margin-top: var(--spacing-md);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-b-sm);
+        }
+
+        .categoriesItem {
+            border-bottom: 1px solid var(--sub-light-color);
+            padding-bottom: var(--spacing-sm);
+            transition: color 0.2s ease-in-out;
+        }
+    }
+
+    .mainList {
+        flex: 0.75;
+        display: flex;
+        flex-direction: column;
+
+        .listProductContainer {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footerList {
+            display: flex;
+
+            .paginationContainter {
+                display: flex;
+                align-items: center;
+                position: relative;
+                align-items: flex-end;
+                left: calc(2.5 * var(--spacing-lg));
+            }
+    
+            .changeAmoutItemContainer {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                width: 200px;
+                margin-right: 0;
+                margin-left: auto;
+                right: var(--spacing-sm);
+                bottom: calc(-1 * (-3px + var(--spacing-md)));
+    
+                .text {
+                    position: absolute;
+                    user-select: none;
+                }
+    
+                .changeAmoutItem {
+                    width: 80px;
+                    user-select: none;
+                    margin-left: auto;
+                    position: relative;
+                    height: 100px;
+                    top: calc(-3px + var(--spacing-md));
+                    left: var(--spacing-sm);
+                }
+    
+            }
+        }
+
+       
+    }
 }
 
-.mainList {
-    position: relative;
-    height: 530px;
-}
+

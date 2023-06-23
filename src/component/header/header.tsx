@@ -51,6 +51,9 @@ export const Header = () => {
                     </Link>
 
                     <div className={cl("navInfo")}>
+                        <Link to={"/Nura/"}>
+                            <NavInfoItem content="Home"></NavInfoItem>
+                        </Link>
                         <Link to={"/page-list"}>
                             <NavInfoItem content="Product"></NavInfoItem>
                         </Link>

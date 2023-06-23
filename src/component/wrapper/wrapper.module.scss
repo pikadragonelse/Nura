@@ -2,9 +2,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100%;
     color: var(--contrast-color);
-
+    font-size: var(--font-s-md);
 }
 
 .wrapperMain {
@@ -19,5 +18,4 @@
     justify-content: center;
     background-color: var(--main-color);
     margin: var(--spacing-b-sm) calc(var(--spacing-lg));
-    
 }

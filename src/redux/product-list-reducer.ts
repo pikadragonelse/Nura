@@ -21,6 +21,25 @@ export type ProductListState = {
     page3: number;
 }[];
 
+export type ProductType = {
+    id: number;
+    name: string;
+    price: number;
+    desc: string;
+    image: string;
+    features: object;
+    normalFeatures: object;
+    link: string;
+    button: boolean;
+    shipping: boolean;
+    payment: boolean;
+    paymentMethod: object;
+    returns: boolean;
+    warranty: boolean;
+    page1: number;
+    page3: number;
+};
+
 const initialState: ProductListState = [];
 
 export const productListSlice = createSlice({

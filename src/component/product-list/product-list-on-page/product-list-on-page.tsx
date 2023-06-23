@@ -1,11 +1,15 @@
-import classNames from 'classnames/bind';
-import { useState } from 'react';
+import classNames from "classnames/bind";
+import { useEffect, useState } from "react";
 
-import { ProductListItem } from '../product-list-item';
-import { AddProduct } from '../add-product';
-import { LoadingState } from '../../loading-state';
-import { Modal } from '../../modal';
-import styles from './product-list-on-page.module.scss';
+import { ProductListItem } from "../product-list-item";
+import { AddProduct } from "../add-product";
+import { LoadingState } from "../../loading-state";
+import { Modal } from "../../modal";
+import styles from "./product-list-on-page.module.scss";
+import { Pagination } from "../../pagination";
+import { Select } from "../../select";
+import axios from "axios";
+import { useAppDispatch, useAppSelector } from "../../../redux/hook";
 
 const cl = classNames.bind(styles);
 
@@ -21,6 +25,9 @@ export const ProductListOnPage = (props: {
         listCoverProductOnPage.push(count);
     }
 
+    const listProduct = useAppSelector((state) => state.productList);
+    const dispatch = useAppDispatch();
+
     const [productSelect, setProductSelect] = useState({});
     const [isOpenDetailModal, setIsOpenDetailModal] = useState(false);
 
@@ -35,23 +42,24 @@ export const ProductListOnPage = (props: {
                 product={productSelect}
             />
 
-            <ul className={cl('ourProductItem', 'productList')}>
-                <div onClick={() => props.handleOpenModal(true)} className={cl('addProduct')}>
+            <ul className={cl("ourProductItem", "productList")}>
+                <div
+                    onClick={() => props.handleOpenModal(true)}
+                    className={cl("addProduct")}
+                >
                     <AddProduct />
                 </div>
                 {props.loading === true
                     ? listCoverProductOnPage.map((item) => (
-                          <div key={item} className={cl('loadingProduct', 'loadingActive')}>
+                          <div
+                              key={item}
+                              className={cl("loadingProduct", "loadingActive")}
+                          >
                               <LoadingState />
                           </div>
                       ))
                     : props.listProduct.map((item: any) => (
-                          <ProductListItem
-                              key={item.id}
-                              product={item}
-                              setProductSelect={setProductSelect}
-                              setIsOpenDetailModal={setIsOpenDetailModal}
-                          />
+                          <ProductListItem key={item.id} product={item} />
                       ))}
             </ul>
         </>
