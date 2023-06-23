@@ -43,23 +43,23 @@ export const Modal = ({
     const [listProductLastPage3, setListProductLastPage3] = useState([]);
 
     const getProductLastPage = (numberProductOnPage: any) => {
-        axios
-            .get(
-                `https://anything-three.vercel.app/listProduct?page${numberProductOnPage}=${Math.ceil(
-                    localStorage.totalProduct / numberProductOnPage
-                )}`
-            )
-            .then((res) => {
-                if (numberProductOnPage === 1) {
-                    setListProductLastPage1(res.data);
-                }
-                if (numberProductOnPage === 3) {
-                    setListProductLastPage3(res.data);
-                }
-            })
-            .catch(() => {
-                setError(true);
-            });
+        // axios
+        //     .get(
+        //         `https://anything-three.vercel.app/listProduct?page${numberProductOnPage}=${Math.ceil(
+        //             localStorage.totalProduct / numberProductOnPage
+        //         )}`
+        //     )
+        //     .then((res) => {
+        //         if (numberProductOnPage === 1) {
+        //             setListProductLastPage1(res.data);
+        //         }
+        //         if (numberProductOnPage === 3) {
+        //             setListProductLastPage3(res.data);
+        //         }
+        //     })
+        //     .catch(() => {
+        //         setError(true);
+        //     });
     };
 
     useEffect(() => {
