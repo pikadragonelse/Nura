@@ -9,6 +9,7 @@
     box-shadow: 1px 0px 10px var(--transparent-light);
     background-color: var(--sub-color);
     z-index: var(--z-highest);
+    top: calc(2.5 * var(--spacing-lg));
 }
 
 .formCompareIcon {
