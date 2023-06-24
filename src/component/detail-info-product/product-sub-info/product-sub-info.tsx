@@ -14,7 +14,7 @@ export const ProductSubInfo = (props: {
             <h4 className={cl("headingSubInfo")}>{props.heading}</h4>
 
             <span className={cl("shippingContent")}>
-                {props.content}&nbsp; {"\n"}
+                {props.content}
                 <a href="!#" className={cl("viewInfoLink")}>
                     {props.linkContent}
                 </a>

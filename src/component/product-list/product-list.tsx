@@ -1,10 +1,9 @@
 import classNames from "classnames/bind";
 
 import { ErrorState } from "../../component/error-state";
-import { ProductListOnPage } from "./product-list-on-page";
 import styles from "./product-list.module.scss";
 import { Collapse } from "../collapse";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import {
     ProductListState,
@@ -14,6 +13,13 @@ import {
 import { useAppDispatch, useAppSelector } from "../../redux/hook";
 import { Pagination } from "../pagination";
 import { ProductListItem } from "./product-list-item";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faArrowUpRightFromSquare,
+    faSquareMinus,
+} from "@fortawesome/free-solid-svg-icons";
+import { Button } from "../button";
 
 const cl = classNames.bind(styles);
 
@@ -125,32 +131,122 @@ export const ProductList = ({}) => {
         getData(amountProduct);
     }, [amountProduct]);
 
+    const productCompare = useAppSelector((state) => state.compareProduct);
+
+    const refCollapse1 = useRef<any>(null);
+    const refCollapse2 = useRef<any>(null);
+    const refCollapse3 = useRef<any>(null);
     return (
         <>
             {errorPage === true ? (
                 <ErrorState />
             ) : (
                 <section className={cl("productList")}>
-                    <div className={cl("categories")}>
-                        <h2 className={cl("categoriesHeading")}>Categories</h2>
-                        <ul className={cl("categoriesListItem")}>
-                            <Collapse
-                                title="Nura True"
-                                contentChild={["Official", "Accessory", "All"]}
-                                className={cl("categoriesItem")}
-                            />
-                            <Collapse
-                                title="Nura Loop"
-                                contentChild={["Official", "Accessory", "All"]}
-                                className={cl("categoriesItem")}
-                            />
-                            <Collapse
-                                title="Nura Phone"
-                                contentChild={["Official", "Accessory", "All"]}
-                                className={cl("categoriesItem")}
-                            />
-                        </ul>
+                    <div className={cl("containerCategories")}>
+                        <div className={cl("categories")}>
+                            <h2 className={cl("categoriesHeading")}>
+                                Categories
+                                <FontAwesomeIcon
+                                    icon={faSquareMinus}
+                                    className={cl("categoriesIconCollapse")}
+                                    onClick={() => {
+                                        refCollapse1.current.setIsColapsed(
+                                            false
+                                        );
+                                        refCollapse2.current.setIsColapsed(
+                                            false
+                                        );
+                                        refCollapse3.current.setIsColapsed(
+                                            false
+                                        );
+                                    }}
+                                />
+                            </h2>
+
+                            <ul className={cl("categoriesListItem")}>
+                                <Collapse
+                                    ref={refCollapse1}
+                                    title="Nura True"
+                                    contentChild={[
+                                        "Official",
+                                        "Accessory",
+                                        "All",
+                                    ]}
+                                    className={cl("categoriesItem")}
+                                />
+                                <Collapse
+                                    ref={refCollapse2}
+                                    title="Nura Loop"
+                                    contentChild={[
+                                        "Official",
+                                        "Accessory",
+                                        "All",
+                                    ]}
+                                    className={cl("categoriesItem")}
+                                />
+                                <Collapse
+                                    ref={refCollapse3}
+                                    title="Nura Phone"
+                                    contentChild={[
+                                        "Official",
+                                        "Accessory",
+                                        "All",
+                                    ]}
+                                    className={cl("categoriesItem")}
+                                />
+                            </ul>
+                        </div>
+                        <div
+                            className={cl(
+                                "selectCompare",
+                                `${
+                                    productCompare.name === "" ||
+                                    productCompare.name == null
+                                        ? "hide"
+                                        : ""
+                                }`
+                            )}
+                        >
+                            <h3 className="titleSelect">Compare product</h3>
+                            {/* <ProductListItem key={item.id} product={item} /> */}
+                            <div className={cl("containerProductCompare")}>
+                                <div className={cl("containerImg")}>
+                                    <img
+                                        src={productCompare.image}
+                                        alt=""
+                                        className={cl("productImg")}
+                                    />
+                                </div>
+
+                                <div className={cl("productInfo")}>
+                                    <h4 className={cl("productName")}>
+                                        {productCompare.name}
+                                    </h4>
+                                    <p className={cl("productPrice")}>
+                                        ${productCompare.price}
+                                    </p>
+                                    <Link
+                                        to={`/detail-page/${productCompare.id}`}
+                                        className={cl("linkProduct")}
+                                    >
+                                        <Button
+                                            className={cl(
+                                                "compareButton",
+                                                "btnDetail"
+                                            )}
+                                        >
+                                            Detail
+                                            <FontAwesomeIcon
+                                                icon={faArrowUpRightFromSquare}
+                                                className={cl("iconDetail")}
+                                            />
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div className={cl("mainList")}>
                         <ul className={cl("listProductContainer")}>
                             {listShow.map((item) => (

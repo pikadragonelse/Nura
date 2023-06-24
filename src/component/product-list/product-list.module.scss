@@ -7,30 +7,101 @@
     padding: 0 var(--spacing-lg);
     height: auto;
 
-
-    .categories {
-        position: relative;
+    .containerCategories {
         flex: 0.2;
-        background-color: var(--contrast-color);
-        border-radius: var(--border-radius-md);
-        background-color: var(--sub-color);
-        padding: var(--spacing-md);
-        height: max-content;
+        position: relative;
 
-        .categoriesListItem {
-            font-size: var(--font-s-lg);
-            margin-top: var(--spacing-md);
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-b-sm);
+        .categoriesIconCollapse {
+            --size-icon: 20px;
+            width: var(--size-icon);
+            height: var(--size-icon);
+            margin-left: auto;
+            position: absolute;
+            right: var(--spacing-md);
+            margin-top: calc(var(--spacing-vr-sm) - 2px);
+            cursor: pointer;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: var(--primary-color);
+            }
         }
 
-        .categoriesItem {
-            border-bottom: 1px solid var(--sub-light-color);
-            padding-bottom: var(--spacing-sm);
-            transition: color 0.2s ease-in-out;
+        .categories {
+            position: relative;
+            background-color: var(--contrast-color);
+            border-radius: var(--border-radius-md);
+            background-color: var(--sub-color);
+            padding: var(--spacing-md);
+            height: max-content;
+
+
+    
+            .categoriesListItem {
+                font-size: var(--font-s-lg);
+                margin-top: var(--spacing-md);
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-b-sm);
+            }
+    
+            .categoriesItem {
+                border-bottom: 1px solid var(--sub-light-color);
+                padding-bottom: var(--spacing-sm);
+                transition: color 0.2s ease-in-out;
+            }
+        }
+
+        .selectCompare {
+            margin-top: var(--spacing-md);
+
+            .containerProductCompare {
+                display: flex;
+                width: 100%;
+                margin-top: var(--spacing-md);
+                gap: var(--spacing-sm);
+                align-items: center;
+
+                .containerImg {
+                    flex: 0.8;
+
+                    .productImg {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: var(--border-radius-md);
+                    }
+                }
+
+                .productInfo {
+                    flex: 0.9;
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--spacing-sm);
+
+                    .productName {
+                        width: 80%;
+                        height: 35px;
+                    }
+
+                    .productPrice {
+                        margin: 0;
+                    }
+
+                    .iconDetail {
+                        margin-left: var(--spacing-vr-sm);
+                    }
+                }
+
+            }
+        }
+
+        .selectCompare.hide {
+            display: none;
         }
     }
+
+
 
     .mainList {
         flex: 0.75;
@@ -67,7 +138,7 @@
                 width: 200px;
                 margin-right: 0;
                 margin-left: auto;
-                right: var(--spacing-sm);
+                right: calc( 2.1 * var(--spacing-lg));
                 bottom: calc(-1 * (-3px + var(--spacing-md)));
     
                 .text {

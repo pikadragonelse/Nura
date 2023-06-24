@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { forwardRef, useImperativeHandle, useState } from "react";
 
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,69 +14,78 @@ export type Collapse = {
     isBackground?: boolean;
     smallSize?: boolean;
 };
-export const Collapse = ({
-    title,
-    contentChild = [],
-    className,
-    onClickChild = (...args: any[]) => {},
-    isCollapsedWhenClickChild = false,
-    noPadding = false,
-    isBackground = false,
-    smallSize = false,
-}: Collapse) => {
-    const [isColapsed, setIsColapsed] = useState<boolean>(false);
+export const Collapse = forwardRef(
+    (
+        {
+            title,
+            contentChild = [],
+            className,
+            onClickChild = (...args: any[]) => {},
+            isCollapsedWhenClickChild = false,
+            noPadding = false,
+            isBackground = false,
+            smallSize = false,
+        }: Collapse,
+        ref
+    ) => {
+        const [isColapsed, setIsColapsed] = useState<boolean>(false);
 
-    return (
-        <div
-            className={`collapse ${className} ${
-                isBackground === true ? "background" : ""
-            }`}
-        >
+        useImperativeHandle(ref, () => {
+            return { setIsColapsed };
+        });
+
+        return (
             <div
-                className={`
+                className={`collapse ${className} ${
+                    isBackground === true ? "background" : ""
+                }`}
+            >
+                <div
+                    className={`
                     title 
                     ${noPadding === true ? "noPadding" : ""} 
                     ${isBackground === true ? "background" : ""}
                     ${isColapsed === true ? "collapsed" : ""}
                     ${smallSize === true ? "small" : ""}
                 `}
-                onClick={() => {
-                    setIsColapsed((prev) => (prev = !prev));
-                }}
-            >
-                <span>{title}</span>
-                <FontAwesomeIcon
-                    icon={faAngleDown}
-                    className={`collapse-icon ${
-                        isColapsed === true ? "hide" : ""
-                    }`}
-                />
-                <FontAwesomeIcon
-                    icon={faAngleUp}
-                    className={`collapse-icon ${
-                        isColapsed === false ? "hide" : ""
-                    }`}
-                />
-            </div>
+                    onClick={() => {
+                        setIsColapsed((prev) => (prev = !prev));
+                    }}
+                >
+                    <span>{title}</span>
+                    <FontAwesomeIcon
+                        icon={faAngleDown}
+                        className={`collapse-icon ${
+                            isColapsed === true ? "hide" : ""
+                        }`}
+                    />
+                    <FontAwesomeIcon
+                        icon={faAngleUp}
+                        className={`collapse-icon ${
+                            isColapsed === false ? "hide" : ""
+                        }`}
+                    />
+                </div>
 
-            {contentChild.map((item) => (
-                <div
-                    className={`
+                {contentChild.map((item) => (
+                    <div
+                        className={`
                         content 
                         ${isColapsed === true ? "collapsed" : ""} 
                         ${isBackground === true ? "background" : ""}
                         ${smallSize === true ? "small" : ""}
                     `}
-                    onClick={() => {
-                        onClickChild((prev: any) => (prev = item));
-                        if (isCollapsedWhenClickChild === true) {
-                            setIsColapsed((prev) => (prev = false));
-                        }
-                    }}
-                >
-                    {item}
-                </div>
-            ))}
-        </div>
-    );
-};
+                        onClick={() => {
+                            onClickChild((prev: any) => (prev = item));
+                            if (isCollapsedWhenClickChild === true) {
+                                setIsColapsed((prev) => (prev = false));
+                            }
+                        }}
+                    >
+                        {item}
+                    </div>
+                ))}
+            </div>
+        );
+    }
+);

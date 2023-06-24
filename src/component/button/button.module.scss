@@ -5,11 +5,13 @@
     min-width: 100px;
     padding: var(--spacing-vr-sm) var(--spacing-b-sm);
     border-radius: var(--border-radius-lt);
-    background-color: var(--contrast-color);
+    background-color: var(--primary-color);
+    color: var(--contrast-color);
+    transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        opacity: var(--opacity-lt);
+        background-color: var(--dark-primary-color);
     }
 }
 
