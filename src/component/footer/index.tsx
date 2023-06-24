@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="footer">
             <div className="name">Nguyen Ngoc Bao Long</div>
             <div className="text">
-                ©Copy rights from{" "}
+                ©Copyrights from{" "}
                 <a href="https://www.nurasound.com/">nurasound.com</a>
             </div>
             <div className="date">01/06/2023</div>
