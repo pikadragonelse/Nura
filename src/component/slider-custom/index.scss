@@ -1,9 +1,8 @@
 .slider-custom {
     position: relative;
-    width: 100%;
-    height: 620px;
+    // width: 100%;
     min-height: 600px;
-    border-radius: var(--border-radius-md-1);
+    // border-radius: var(--border-radius-md-1);
     color: var(--contrast-color);
     padding: var(--spacing-md);
     font-size: var(--font-s-md);
@@ -13,7 +12,7 @@
     background-size: cover;
     background-image: unset;
     transition: background-image 0.2s ease-in-out;
-    margin-top: calc( 2.2 * var(--spacing-lg));
+    // margin-top: calc( 2.2 * var(--spacing-lg));
 
     .name-product {
         font-size: calc(2 * var(--font-s-lg-2));
@@ -51,6 +50,7 @@
         flex-direction: column;
         padding: var(--spacing-b-sm);
         border-radius: var(--border-radius-md);
+        margin-left: var(--spacing-md);
     }
 
     .slider-list {

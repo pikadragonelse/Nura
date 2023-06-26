@@ -1,0 +1,16 @@
+.lossless-audio-info {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    flex-direction: column;
+
+    .lossless-audio-desc {
+        font-size: calc(1.5 * var(--font-s-lg));
+        width: 800px;
+        text-align: center;
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+}

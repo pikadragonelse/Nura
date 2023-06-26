@@ -3,6 +3,7 @@ import "./index.scss";
 import { ButtonCustom } from "../button-custom";
 import { SliderImage } from "./slider-image";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const imgMap: Record<number, string> = {
     1: process.env.PUBLIC_URL + "/media/introduction/nura-true-intro.jpeg",
@@ -16,11 +17,15 @@ export type SliderCustom = {
     nameProduct: string;
     descProduct: string;
     handleChangeOrder?: (productId: number) => void;
+    ref?: any;
+    style?: any;
 };
 export const SliderCustom = ({
     nameProduct,
     descProduct,
     handleChangeOrder = (productId: number) => "",
+    ref,
+    style,
 }: SliderCustom) => {
     const [order, setOrder] = useState<number>(1);
 
@@ -77,7 +82,7 @@ export const SliderCustom = ({
     };
 
     return (
-        <div ref={sliderCustomRef} className="slider-custom">
+        <section ref={sliderCustomRef} className="slider-custom">
             <div className="overlay"></div>
             <div className="content">
                 <h1 className="name-product">{nameProduct}</h1>
@@ -109,6 +114,6 @@ export const SliderCustom = ({
                     <h2 className="product-order">0{order}</h2>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

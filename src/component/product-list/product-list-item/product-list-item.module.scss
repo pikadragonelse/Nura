@@ -1,5 +1,5 @@
 .product {
-    --size-product: 250px;
+    --size-product: 270px;
     position: relative;
     flex: calc(1/3);
     min-width: calc(var(--size-product) - 20px);
@@ -80,7 +80,7 @@
                 min-width: 100px;
                 max-width: 150px;
                 font-size: var(--font-s-sm);
-                background-color: var(--primary-color);
+                background-color: var(--primary-btn-color);
                 color: var(--contrast-color);
                 transition: background-color 0.2s ease-out;
 
@@ -135,7 +135,7 @@
     position: absolute;
     z-index: var(--z-higher);
     top: var(--spacing-sm);
-    background-color: var(--primary-color);
+    background-color: var(--primary-btn-color);
     padding: var(--spacing-vr-sm);
     right: -4px;
     border-top-left-radius: var(--border-radius-lt);

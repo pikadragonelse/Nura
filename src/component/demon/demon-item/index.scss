@@ -1,0 +1,13 @@
+.demon-item {
+    text-align: center;
+    flex: 0.25;
+
+    .title {
+        color: var(--primary-color);
+    }
+
+    .desc {
+        font-size: var(--font-s-lg);
+        height: 100px;
+    }
+}

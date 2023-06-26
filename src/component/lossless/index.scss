@@ -1,0 +1,34 @@
+.lossless-audio {
+    height: 130vh;
+    max-height: 130vh;
+    background-image: url('https://www.nurasound.com/cdn-global/61e0aea29907ff3af88a5278/648f9e08c67475da7b6ebf6a_perl-audio_craftsmanship_bg.jpg');
+    background-size: cover;
+    padding: var(--spacing-md);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+
+    // &::-webkit-scrollbar-track
+    // {
+    //     display: none;
+    // }
+
+    // &::-webkit-scrollbar
+    // {
+    //     display: none;
+    // }
+
+    .title {
+        font-size: calc(4 * var(--font-s-lg));
+        user-select: none;
+    }
+
+    .container-content {
+        position: relative;
+        height: max-content;
+        margin-top: auto;
+    }
+}
+

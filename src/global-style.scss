@@ -14,16 +14,17 @@
     /*Color*/
     --black: #000;
     --white: rgb(255, 255, 255);
-    --contrast-color: rgb(228, 228, 228);
+    --contrast-color: rgb(245, 245, 245);
     --contrast-str-color: rgba(235, 235, 235, 0.74);
-    --main-color: #272727;
+    --main-color: #1a1a1a;
     --sub-color: rgb(71, 71, 71);
     --sub-light-color: rgb(95, 95, 95);
     --transparent-dark: rgba(20, 20, 20, 0.507);
     --transparent-dark-1: rgba(20, 20, 20, 0.864);
     --transparent-light: rgba(206, 206, 206, 0.356);
-    --primary-color: rgb(86, 88, 221);
-    --dark-primary-color: rgb(56, 57, 145);
+    --primary-color: #77FB5D;
+    --primary-btn-color: #39da19;
+    --dark-primary-color: #2ea516;
 
     --primary-light-color: rgb(106, 109, 236);
     --sub-primary-color: rgb(228, 74, 74);
@@ -71,6 +72,7 @@ html {
     font-size: 62.5%;
     height: 100%;
     overflow: auto;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
         width: 8px;
