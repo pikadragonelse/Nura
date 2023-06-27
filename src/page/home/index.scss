@@ -1,9 +1,5 @@
 .home-page {
     flex-direction: column;
-
-    section {
-        height: 100vh;
-    }
 }
 
 .sub-section-container {
@@ -17,15 +13,16 @@
     .sub-section-content {
         flex: 1;
         margin-left: calc(var(--spacing-vr-lg));
+        overflow: hidden;
 
         .sub-section-title {
             font-size: var(--font-s-lg);
             color: #77FB5D;
-
         }
 
         .sub-section-description {
-            font-size: calc(1.8 * var(--font-s-lg-2));
+            font-size: calc(1.5 * var(--font-s-lg-2));
+            max-width: 500px;
 
             span {
                 color: var(--primary-color);
@@ -120,6 +117,76 @@
     .sub-section-item:nth-child(3) {
         align-items: center;
         background-size: cover;
+    }
+}
+
+@media (max-width: 63.9375em /*1023px*/) {
+
+}
+
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+    .sub-section-container {
+        height: 100vh;
+
+        .sub-section-content {
+            margin-left: var(--spacing-lg);
+
+            .sub-section-title {
+                font-size: var(--font-s-md);
+            }
+    
+            .btn-sub-section {
+                font-size: var(--font-s-md);
+            }
+
+            .sub-section-description {
+                font-size: calc(var(--font-s-lg-2));
+            }
+
+        }
+
+        .img-container {
+            --size-img: 400px;
+            width: var(--size-img);
+            height: var(--size-img);
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 46.1875em /*739px*/) {
+    .sub-section-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-lg);
+        height: 100vh;
+
+        .sub-section-content {
+            margin: var(--spacing-lg);
+            flex: unset;
+            text-align: center;
+
+            .sub-section-title {
+                font-size: var(--font-s-md);
+            }
+    
+            .btn-sub-section {
+                font-size: var(--font-s-md);
+            }
+
+            .sub-section-description {
+                font-size: calc(var(--font-s-lg-2));
+            }
+
+        }
+
+        .img-container {
+            --size-img: 300px;
+            width: var(--size-img);
+            height: var(--size-img);
+    
+        }
     }
 }
 

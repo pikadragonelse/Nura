@@ -5,13 +5,20 @@ import { NavInfoItem } from "./nav-info-item";
 import { Link } from "react-router-dom";
 import { ButtonCustom } from "../button-custom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import {
+    faCartShopping,
+    faCircleXmark,
+    faListUl,
+} from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
+import { useAppDispatch } from "../../redux/hook";
+import { setIsOpen } from "../../redux/drawer";
 
 const cl = classNames.bind(styles);
 
 export const Header = () => {
     const [isBackground, setIsBackground] = useState<boolean>(false);
+    const dispatch = useAppDispatch();
 
     const handleScrollPage = (scrollTop: number) => {
         if (scrollTop > 10) {
@@ -50,7 +57,7 @@ export const Header = () => {
                         </svg>
                     </Link>
 
-                    <div className={cl("navInfo")}>
+                    <div className={cl("navInfo", "isHideInMobile")}>
                         <Link to={"/Nura/"}>
                             <NavInfoItem content="Home"></NavInfoItem>
                         </Link>
@@ -66,13 +73,18 @@ export const Header = () => {
                     </div>
                 </div>
 
-                <ButtonCustom className={cl("navCart")}>
+                <ButtonCustom className={cl("navCart", "isHideInMobile")}>
                     <FontAwesomeIcon
                         icon={faCartShopping}
                         className={cl("cartIcon")}
                     />
                     Cart
                 </ButtonCustom>
+                <FontAwesomeIcon
+                    icon={faListUl}
+                    className={cl("navList", "isShowInMobile")}
+                    onClick={() => dispatch(setIsOpen(true))}
+                />
             </nav>
         </header>
     );

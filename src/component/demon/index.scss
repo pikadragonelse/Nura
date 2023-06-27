@@ -15,7 +15,41 @@
 
     .content-container {
         display: flex;
-        margin-top: calc(-1 * var(--spacing-lg));
-        gap: var(--spacing-md);
+        margin-top: calc( var(--spacing-lg));
+        gap: var(--spacing-b-sm);
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 63.9375em /*1023px*/) {
+
+
+}
+
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+    .demon {
+        
+        .title-demon {
+            font-size: calc(2 * var(--font-s-lg));
+        }
+        .content-container {
+            margin-top: var(--spacing-md);
+        }
+    }
+}
+
+@media (max-width: 46.1875em /*739px*/) {
+    .demon {
+        
+        .title-demon {
+            font-size: calc(1.2 * var(--font-s-lg));
+        }
+
+        .content-container {
+            margin-top: var(--spacing-md);
+        }
     }
 }

@@ -7,10 +7,17 @@ export type NavInfoItem = {
     content: any;
     href?: any;
     className?: string;
+    icon?: any;
 };
-export const NavInfoItem = ({ content, href, className }: NavInfoItem) => {
+export const NavInfoItem = ({
+    content,
+    href,
+    className,
+    icon,
+}: NavInfoItem) => {
     return (
         <a href={href} className={cl("navInfoItem", className)}>
+            {icon}
             {content}
         </a>
     );

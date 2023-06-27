@@ -1,7 +1,7 @@
 .demon-item {
     text-align: center;
     flex: 0.25;
-
+    min-width: 300px;
     .title {
         color: var(--primary-color);
     }
@@ -9,5 +9,42 @@
     .desc {
         font-size: var(--font-s-lg);
         height: 100px;
+    }
+}
+
+
+@media (max-width: 63.9375em /*1023px*/) {
+
+
+}
+
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+    .demon-item {
+        flex: 0.5;
+    
+        .desc {
+            font-size: var(--font-s-md);
+            height: 60px;
+        }
+
+        .img {
+            width: 100px;
+        }
+    }
+    
+}
+
+@media (max-width: 46.1875em /*739px*/) {
+    .demon-item {
+        flex: 1;
+    
+        .desc {
+            font-size: var(--font-s-md);
+            height: 30px;
+        }
+
+        .img {
+            width: 80px;
+        }
     }
 }

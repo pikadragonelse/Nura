@@ -11,3 +11,12 @@
         color: var(--primary-color);
     }
 }
+
+
+@media (max-width: 46.1875em /*739px*/) {
+    .footer {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        height: max-content;
+    }
+}

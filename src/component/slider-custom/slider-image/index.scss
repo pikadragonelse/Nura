@@ -13,3 +13,19 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* Tablet */
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+    .slider-image {
+        width: 150px;
+        height: 250px;
+    }
+}
+
+// Mobile
+@media (max-width: 46.1875em /*739px*/) {
+    .slider-image {
+        width: 140px;
+        height: 240px;
+    }
+}

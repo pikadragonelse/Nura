@@ -10,16 +10,6 @@
     overflow: hidden;
     align-items: center;
 
-    // &::-webkit-scrollbar-track
-    // {
-    //     display: none;
-    // }
-
-    // &::-webkit-scrollbar
-    // {
-    //     display: none;
-    // }
-
     .title {
         font-size: calc(4 * var(--font-s-lg));
         user-select: none;
@@ -31,4 +21,29 @@
         margin-top: auto;
     }
 }
+
+@media (max-width: 63.9375em /*1023px*/) {
+
+
+}
+
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+    .lossless-audio {
+        height: 80vh;
+        .title {
+            font-size: calc(3 * var(--font-s-lg));;
+        }
+    }
+}
+
+@media (max-width: 46.1875em /*739px*/) {
+    .lossless-audio {
+        height: 80vh;
+        .title {
+            font-size: calc(1.5 * var(--font-s-lg));;
+        }
+    }
+}
+
+
 

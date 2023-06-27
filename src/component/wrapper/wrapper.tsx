@@ -9,10 +9,21 @@ export type Wrapper = {
     type: any;
     className?: any;
     id?: string;
+    onClick?: React.MouseEventHandler<any>;
 };
-export const Wrapper = ({ children, type, className, id }: Wrapper) => {
+export const Wrapper = ({
+    children,
+    type,
+    className,
+    id,
+    onClick,
+}: Wrapper) => {
     return (
-        <div id={id} className={cl(`${type}`, `${className}`)}>
+        <div
+            id={id}
+            onClick={onClick}
+            className={cl(`${type}`, `${className}`)}
+        >
             {children}
         </div>
     );

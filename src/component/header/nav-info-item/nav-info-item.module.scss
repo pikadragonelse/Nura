@@ -12,6 +12,23 @@
     }
 }
 
+/* MObile & tablet */
+@media (max-width: 63.9375em /*1023px*/) { 
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+    .navInfoItem {
+        font-size: var(--font-s-sm);
+    }
+}
+
+// Mobile
+@media (max-width: 46.1875em /*739px*/) {
+
+}
+
 
 
 

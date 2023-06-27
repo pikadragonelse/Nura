@@ -88,7 +88,9 @@ export const SliderCustom = ({
                 <h1 className="name-product">{nameProduct}</h1>
                 <p className="description">{descProduct}</p>
                 <Link to={`/detail-page/${order}`} className="link-detail">
-                    <ButtonCustom>Go to detail</ButtonCustom>
+                    <ButtonCustom className="btn-detail">
+                        Go to detail
+                    </ButtonCustom>
                 </Link>
             </div>
             <div className="slider-list">

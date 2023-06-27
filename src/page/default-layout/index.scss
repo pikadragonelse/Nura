@@ -1,0 +1,35 @@
+.drawer {
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    padding: var(--spacing-md);
+    background-color: var(--main-color);
+    z-index: 99999;
+    transform: translateX(300px);
+    opacity: 0.5;
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+
+    .close-drawer-icon {
+        --size-icon: 20px;
+        width: var(--size-icon);
+        height: var(--size-icon);
+        cursor: pointer;
+    }
+
+    .nav-info-mobile {
+        display: flex;
+        margin-top: var(--spacing-md);
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .icon-nav {
+        margin-right: var(--spacing-sm);
+    }
+}
+
+.drawer.open {
+    transform: translateX(0);
+    opacity: 1;
+}
