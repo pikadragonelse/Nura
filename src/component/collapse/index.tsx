@@ -21,6 +21,7 @@ export type Collapse = {
     styleTitle?: Record<string, string>;
     styleOption?: Record<string, string>;
     isContentHard?: boolean;
+    onClick?: React.MouseEventHandler<any> | undefined;
 };
 export const Collapse = forwardRef(
     (
@@ -36,6 +37,7 @@ export const Collapse = forwardRef(
             styleTitle = {},
             styleOption = {},
             isContentHard = false,
+            onClick,
         }: Collapse,
         ref
     ) => {
@@ -50,6 +52,7 @@ export const Collapse = forwardRef(
                 className={`collapse ${className} ${
                     isBackground === true ? "background" : ""
                 }`}
+                onClick={onClick}
             >
                 <div
                     className={`

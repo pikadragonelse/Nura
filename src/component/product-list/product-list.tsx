@@ -186,6 +186,23 @@ export const ProductList = ({}) => {
                                     isBackground={width <= 1023 ? true : false}
                                     smallSize={width <= 1023 ? true : false}
                                     isContentHard={width > 1023 ? true : false}
+                                    onClickChild={() => {
+                                        if (width <= 1023) {
+                                            refCollapse1.current.setIsColapsed(
+                                                false
+                                            );
+                                        }
+                                    }}
+                                    onClick={() => {
+                                        if (width <= 1023) {
+                                            refCollapse2.current.setIsColapsed(
+                                                false
+                                            );
+                                            refCollapse3.current.setIsColapsed(
+                                                false
+                                            );
+                                        }
+                                    }}
                                 />
                                 <Collapse
                                     ref={refCollapse2}
@@ -199,6 +216,23 @@ export const ProductList = ({}) => {
                                     isBackground={width <= 1023 ? true : false}
                                     smallSize={width <= 1023 ? true : false}
                                     isContentHard={width > 1023 ? true : false}
+                                    onClickChild={() => {
+                                        if (width <= 1023) {
+                                            refCollapse2.current.setIsColapsed(
+                                                false
+                                            );
+                                        }
+                                    }}
+                                    onClick={() => {
+                                        if (width <= 1023) {
+                                            refCollapse1.current.setIsColapsed(
+                                                false
+                                            );
+                                            refCollapse3.current.setIsColapsed(
+                                                false
+                                            );
+                                        }
+                                    }}
                                 />
                                 <Collapse
                                     ref={refCollapse3}
@@ -212,6 +246,23 @@ export const ProductList = ({}) => {
                                     isBackground={width <= 1023 ? true : false}
                                     smallSize={width <= 1023 ? true : false}
                                     isContentHard={width > 1023 ? true : false}
+                                    onClickChild={() => {
+                                        if (width <= 1023) {
+                                            refCollapse3.current.setIsColapsed(
+                                                false
+                                            );
+                                        }
+                                    }}
+                                    onClick={() => {
+                                        if (width <= 1023) {
+                                            refCollapse1.current.setIsColapsed(
+                                                false
+                                            );
+                                            refCollapse2.current.setIsColapsed(
+                                                false
+                                            );
+                                        }
+                                    }}
                                 />
                             </ul>
                             {width <= 1023 ? (
