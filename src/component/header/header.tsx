@@ -47,7 +47,7 @@ export const Header = () => {
         >
             <nav className={cl("headerNavbar")}>
                 <div className={cl("mainSection")}>
-                    <Link to="/Nura/" className={cl("logo")}>
+                    <Link to="/" className={cl("logo")}>
                         <svg
                             className={cl("logoContent")}
                             viewBox="0 0 93 16"
@@ -58,7 +58,7 @@ export const Header = () => {
                     </Link>
 
                     <div className={cl("navInfo", "isHideInMobile")}>
-                        <Link to={"/Nura/"}>
+                        <Link to={"/"}>
                             <NavInfoItem content="Home"></NavInfoItem>
                         </Link>
                         <Link to={"/page-list"}>
