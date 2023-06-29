@@ -162,6 +162,7 @@
 
 .linkProduct { 
     flex: calc(1/3);
+    display: block;
 }
 
 @media (max-width: 63.9375em /*1023px*/) {
