@@ -32,6 +32,8 @@ export const ProductList = ({}) => {
     const [amountProduct, setAmountProduct] = useState(5);
     const [listShow, setListShow] = useState<ProductListState>([]);
 
+    localStorage.totalProduct = 56;
+
     const listProduct = useAppSelector((state) => state.productList);
     const dispatch = useAppDispatch();
 
