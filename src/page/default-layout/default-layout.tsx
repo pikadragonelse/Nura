@@ -33,7 +33,7 @@ export const DefaultLayout = ({ children, className }: DefaultLayout) => {
                     onClick={() => dispatch(setIsOpen(false))}
                 />
                 <div className={"nav-info-mobile"}>
-                    <Link to={"/Nura/"}>
+                    <Link to={"/"}>
                         <NavInfoItem
                             content="Home"
                             icon={
