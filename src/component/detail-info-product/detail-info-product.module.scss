@@ -3,6 +3,7 @@
     flex: 1;
     font-size: var(--font-s-md);
     padding: 0 var(--spacing-lg);
+    justify-content: center;
 }
 
 .editIcon {
@@ -24,17 +25,12 @@
 
 .overviewImage {
     position: relative;
-    display: flex;
-    height: 100%;
-    justify-content: center;
     margin-right: var(--spacing-lg);
-    flex: 1;
     border-radius: var(--border-radius-md);
 }
 
 .overviewProductImg {
     width: 100%;
-    min-width: 600px;
     object-fit: cover;
     border-radius: var(--border-radius-md);
 }
@@ -83,7 +79,7 @@
 
 .listFeature {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: auto auto;
     gap: var(--spacing-md) var(--spacing-lg);
 }
 
@@ -105,8 +101,55 @@
 
 .productListPaymentMethod {
     display: flex;
+    gap: var(--spacing-md);
 }
 
 .paymentMethod {
-    margin-right: var(--spacing-md);
+    --size-icon: 60px;
+    // width: var(--size-icon);
+    // height: var(--size-icon);
+    flex: 0.25;
+    max-width: var(--size-icon);
+    background-color: var(--contrast-color);
+    padding: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius-lt);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    .paymentItem {
+        width: 100%;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+
+
+@media (max-width: 63.9375em /*1023px*/) {
+    .overview {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: center;
+    }
+
+    .overviewImage {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+    .overview {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 46.1875em /*739px*/) {
+
 }

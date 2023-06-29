@@ -20,6 +20,7 @@ export type Pagination = {
     currentPage: any;
     fastIncreaseCurrentPage: any;
     fastDecreaseCurrentPage: any;
+    styleList?: React.CSSProperties | undefined;
 };
 
 export const Pagination = ({
@@ -31,6 +32,7 @@ export const Pagination = ({
     currentPage,
     fastIncreaseCurrentPage,
     fastDecreaseCurrentPage,
+    styleList = {},
 }: Pagination) => {
     const numTwoSide = 1;
     let range = numTwoSide + 4;
@@ -84,7 +86,7 @@ export const Pagination = ({
 
     return (
         <nav className={cl("paginationContainer", className)}>
-            <ul className={cl("pagination")}>
+            <ul className={cl("pagination")} style={styleList}>
                 <li
                     onClick={() => fastDecreaseCurrentPage()}
                     className={cl("paginationPage", "paginationLeft")}

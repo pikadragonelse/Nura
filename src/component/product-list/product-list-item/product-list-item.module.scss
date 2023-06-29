@@ -5,6 +5,7 @@
     min-width: calc(var(--size-product) - 20px);
     text-decoration: none;
     height: 350px;
+    min-height: 150px;
     overflow: hidden;
     border-radius: var(--border-radius-md);
     color: var(--main-color);
@@ -14,9 +15,6 @@
     }
 
     .productHeading {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
         font-weight: var(--font-w-lg);
         font-size: var(--font-s-lg);
         margin-bottom: var(--spacing-vr-sm);
@@ -25,6 +23,7 @@
         position: relative;
         margin-top: var(--spacing-sm);
         margin-left: var(--spacing-sm);
+        max-width: 150px;
     }
 
     .productImageWrapper {
@@ -128,7 +127,6 @@
     &:hover .productInfo {
         background-color: var(--transparent-dark-1);
     }
-
 }
 
 .compareMark {
@@ -142,7 +140,7 @@
     border-bottom-left-radius: var(--border-radius-lt);
     display: none;
     color: var(--contrast-color);
-    font-size: var(--font-s-sm);
+    font-size: var(--font-s-vr-sm);
     user-select: none;
 
     &::before {
@@ -158,3 +156,58 @@
 .compareMark.mark {
     display: block;
 }
+
+
+@media (max-width: 63.9375em /*1023px*/) {
+    
+}
+
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+
+}
+
+@media (max-width: 46.1875em /*739px*/) {
+    .product {
+        flex: 0.5;
+        min-width: calc(var(--size-product) - 100px);
+        height: 150px;
+
+        .productHeading {
+            font-size: var(--font-s-md);
+            text-shadow: 0 1px 5px var(--contrast-color);
+            width: max-content;
+        }
+
+        .productInfo {
+            height:  70px;
+            gap: var(--spacing-vr-sm);
+            justify-content: unset;
+    
+                .productPrice {
+                    color: var(--primary-color);
+                }
+    
+                .containerButtonCompare {
+                    display: none;
+                }
+    
+                .btnDetail {
+
+                    display: none;
+                }
+                
+                .productDesc {
+                    -webkit-line-clamp: 1;
+                    font-size: var(--font-s-vr-sm);
+                    height: 14px;
+                    margin: 0;
+                }
+        }
+
+    }
+
+    .compareMark.mark {
+        display: none;
+    }
+}
+

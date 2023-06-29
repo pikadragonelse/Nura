@@ -14,3 +14,29 @@
     display: flex;
     gap: var(--spacing-md);
 }
+
+.editIcon {
+    position: absolute;
+    right: 0;
+    font-size: var(--font-s-lg);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    z-index: var(--z-high);
+
+    &:hover {
+        color: var(--transparent-light);
+    }
+}
+
+
+@media (max-width: 63.9375em /*1023px*/) {
+}
+
+@media (min-width: 46.25em /*740px*/) and (max-width: 63.9375em /*1023px*/) { 
+
+
+}
+
+@media (max-width: 46.1875em /*739px*/) {
+
+}

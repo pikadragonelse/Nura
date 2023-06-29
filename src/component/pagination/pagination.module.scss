@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
     width: var(--sizeItem);
+    min-width: calc(var(--sizeItem) - 20px);
     max-width: var(--sizeItem);
     padding: var(--spacing-sm);
     margin: 0 var(--spacing-sm);
@@ -48,5 +49,21 @@
 
     &:hover.paginationIcon:hover {
         color: var(--transparent-light);
+    }
+}
+
+@media (max-width: 46.1875em /*739px*/) {
+    .pagination {
+        font-size: var(--font-s-vr-sm);
+    }
+
+    .paginationLink {
+        padding: var(--spacing-vr-sm);
+        margin: 0 var(--spacing-vr-sm);
+        width: unset;
+    }
+
+    .paginationIcon {
+        padding: var(--spacing-vr-sm);
     }
 }

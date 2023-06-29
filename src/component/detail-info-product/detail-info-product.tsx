@@ -36,14 +36,16 @@ export const DetailInfoProduct = (props: {
         },
     ];
 
+    const paymentMethodMap: Record<any, any> = {
+        VISA: `${process.env.PUBLIC_URL}/media/payment-method/vissa.png`,
+        PayPal: `${process.env.PUBLIC_URL}/media/payment-method/paypal.png`,
+        Klarna: `${process.env.PUBLIC_URL}/media/payment-method/klarma.png`,
+        ApplePay: `${process.env.PUBLIC_URL}/media/payment-method/apple-pay.png`,
+    };
+
     return (
         <>
             <section className={cl("overview")}>
-                <FontAwesomeIcon
-                    onClick={props.handleOpenModal}
-                    className={cl("editIcon")}
-                    icon={faPenToSquare}
-                />
                 <div className={cl("overviewItem", "overviewImage")}>
                     {props.loading === true ? (
                         <div className={cl("loadingContainer")}>
@@ -128,7 +130,13 @@ export const DetailInfoProduct = (props: {
                                                 key={item}
                                                 className={cl("paymentMethod")}
                                             >
-                                                {item}
+                                                <img
+                                                    src={paymentMethodMap[item]}
+                                                    alt=""
+                                                    className={cl(
+                                                        "paymentItem"
+                                                    )}
+                                                />
                                             </li>
                                         )
                                     )}

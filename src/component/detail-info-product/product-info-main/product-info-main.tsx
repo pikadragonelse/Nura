@@ -5,6 +5,8 @@ import { useAppSelector } from "../../../redux/hook";
 import { Button } from "../../button";
 import { Modal } from "../../modal";
 import styles from "./product-info-main.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 const cl = classNames.bind(styles);
 
@@ -28,7 +30,13 @@ export const ProductInfoMain = (props: { product: any }) => {
                 ""
             )}
 
-            <h2 className={cl("productName")}>{props.product.name}</h2>
+            <h2 className={cl("productName")}>
+                {props.product.name}
+                <FontAwesomeIcon
+                    className={cl("editIcon")}
+                    icon={faPenToSquare}
+                />
+            </h2>
 
             <div className={cl("productOverview")}>
                 <div className={cl("productPrice")}>

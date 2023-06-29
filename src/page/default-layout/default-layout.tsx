@@ -42,6 +42,7 @@ export const DefaultLayout = ({ children, className }: DefaultLayout) => {
                                     className="icon-nav"
                                 />
                             }
+                            onClick={() => dispatch(setIsOpen(false))}
                         />
                     </Link>
                     <Link to={"/page-list"}>
@@ -53,6 +54,7 @@ export const DefaultLayout = ({ children, className }: DefaultLayout) => {
                                     className="icon-nav"
                                 />
                             }
+                            onClick={() => dispatch(setIsOpen(false))}
                         />
                     </Link>
                     <Link to={""}>
@@ -64,6 +66,7 @@ export const DefaultLayout = ({ children, className }: DefaultLayout) => {
                                     className="icon-nav"
                                 />
                             }
+                            onClick={() => dispatch(setIsOpen(false))}
                         />
                     </Link>
                     <Link to={""}>
@@ -75,6 +78,7 @@ export const DefaultLayout = ({ children, className }: DefaultLayout) => {
                                     className="icon-nav"
                                 />
                             }
+                            onClick={() => dispatch(setIsOpen(false))}
                         />
                     </Link>
                     <Link to={""}>
@@ -86,6 +90,7 @@ export const DefaultLayout = ({ children, className }: DefaultLayout) => {
                                     className="icon-nav"
                                 />
                             }
+                            onClick={() => dispatch(setIsOpen(false))}
                         />
                     </Link>
                 </div>

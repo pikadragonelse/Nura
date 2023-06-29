@@ -20,6 +20,7 @@ import {
     faSquareMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "../button";
+import { useViewport } from "../../hook/useViewport";
 
 const cl = classNames.bind(styles);
 
@@ -136,6 +137,9 @@ export const ProductList = ({}) => {
     const refCollapse1 = useRef<any>(null);
     const refCollapse2 = useRef<any>(null);
     const refCollapse3 = useRef<any>(null);
+
+    const { width } = useViewport();
+
     return (
         <>
             {errorPage === true ? (
@@ -146,6 +150,69 @@ export const ProductList = ({}) => {
                         <div className={cl("categories")}>
                             <h2 className={cl("categoriesHeading")}>
                                 Categories
+                                {width > 1023 ? (
+                                    <FontAwesomeIcon
+                                        icon={faSquareMinus}
+                                        className={cl("categoriesIconCollapse")}
+                                        onClick={() => {
+                                            refCollapse1.current.setIsColapsed(
+                                                false
+                                            );
+                                            refCollapse2.current.setIsColapsed(
+                                                false
+                                            );
+                                            refCollapse3.current.setIsColapsed(
+                                                false
+                                            );
+                                        }}
+                                    />
+                                ) : (
+                                    ""
+                                )}
+                            </h2>
+
+                            <ul className={cl("categoriesListItem")}>
+                                <Collapse
+                                    ref={refCollapse1}
+                                    title="Nura True"
+                                    contentChild={[
+                                        "Official",
+                                        "Accessory",
+                                        "All",
+                                    ]}
+                                    className={cl("categoriesItem")}
+                                    isBackground={width <= 1023 ? true : false}
+                                    smallSize={width <= 1023 ? true : false}
+                                    isContentHard={width > 1023 ? true : false}
+                                />
+                                <Collapse
+                                    ref={refCollapse2}
+                                    title="Nura Loop"
+                                    contentChild={[
+                                        "Official",
+                                        "Accessory",
+                                        "All",
+                                    ]}
+                                    className={cl("categoriesItem")}
+                                    isBackground={width <= 1023 ? true : false}
+                                    smallSize={width <= 1023 ? true : false}
+                                    isContentHard={width > 1023 ? true : false}
+                                />
+                                <Collapse
+                                    ref={refCollapse3}
+                                    title="Nura Phone"
+                                    contentChild={[
+                                        "Official",
+                                        "Accessory",
+                                        "All",
+                                    ]}
+                                    className={cl("categoriesItem")}
+                                    isBackground={width <= 1023 ? true : false}
+                                    smallSize={width <= 1023 ? true : false}
+                                    isContentHard={width > 1023 ? true : false}
+                                />
+                            </ul>
+                            {width <= 1023 ? (
                                 <FontAwesomeIcon
                                     icon={faSquareMinus}
                                     className={cl("categoriesIconCollapse")}
@@ -161,40 +228,9 @@ export const ProductList = ({}) => {
                                         );
                                     }}
                                 />
-                            </h2>
-
-                            <ul className={cl("categoriesListItem")}>
-                                <Collapse
-                                    ref={refCollapse1}
-                                    title="Nura True"
-                                    contentChild={[
-                                        "Official",
-                                        "Accessory",
-                                        "All",
-                                    ]}
-                                    className={cl("categoriesItem")}
-                                />
-                                <Collapse
-                                    ref={refCollapse2}
-                                    title="Nura Loop"
-                                    contentChild={[
-                                        "Official",
-                                        "Accessory",
-                                        "All",
-                                    ]}
-                                    className={cl("categoriesItem")}
-                                />
-                                <Collapse
-                                    ref={refCollapse3}
-                                    title="Nura Phone"
-                                    contentChild={[
-                                        "Official",
-                                        "Accessory",
-                                        "All",
-                                    ]}
-                                    className={cl("categoriesItem")}
-                                />
-                            </ul>
+                            ) : (
+                                ""
+                            )}
                         </div>
                         <div
                             className={cl(
@@ -249,15 +285,53 @@ export const ProductList = ({}) => {
 
                     <div className={cl("mainList")}>
                         <ul className={cl("listProductContainer")}>
-                            {listShow.map((item) => (
-                                <ProductListItem key={item.id} product={item} />
-                            ))}
+                            {width <= 739
+                                ? listShow.map((item) => (
+                                      <Link
+                                          to={`/detail-page/${item.id}`}
+                                          className={cl("linkProduct")}
+                                      >
+                                          <ProductListItem
+                                              key={item.id}
+                                              product={item}
+                                          />
+                                      </Link>
+                                  ))
+                                : listShow.map((item) => (
+                                      <ProductListItem
+                                          key={item.id}
+                                          product={item}
+                                      />
+                                  ))}
                             {listShow.length === 5 ? (
-                                <div className={cl("emptyProduct")}></div>
+                                <div
+                                    className={cl(
+                                        "emptyProduct",
+                                        `${width <= 739 ? "linkProduct" : ""}`
+                                    )}
+                                ></div>
                             ) : (
                                 <>
-                                    <div className={cl("emptyProduct")}></div>
-                                    <div className={cl("emptyProduct")}></div>
+                                    <div
+                                        className={cl(
+                                            "emptyProduct",
+                                            `${
+                                                width <= 739
+                                                    ? "linkProduct"
+                                                    : ""
+                                            }`
+                                        )}
+                                    ></div>
+                                    <div
+                                        className={cl(
+                                            "emptyProduct",
+                                            `${
+                                                width <= 739
+                                                    ? "linkProduct"
+                                                    : ""
+                                            }`
+                                        )}
+                                    ></div>
                                 </>
                             )}
                         </ul>
@@ -295,7 +369,7 @@ export const ProductList = ({}) => {
                                     )}
                                     onClickChild={setAmountProduct}
                                     isCollapsedWhenClickChild={true}
-                                    isBackground={true}
+                                    isBackground
                                     smallSize
                                 />
                             </div>

@@ -8,15 +8,21 @@ export type NavInfoItem = {
     href?: any;
     className?: string;
     icon?: any;
+    onClick?: React.MouseEventHandler<any>;
 };
 export const NavInfoItem = ({
     content,
     href,
     className,
     icon,
+    onClick,
 }: NavInfoItem) => {
     return (
-        <a href={href} className={cl("navInfoItem", className)}>
+        <a
+            onClick={onClick}
+            href={href}
+            className={cl("navInfoItem", className)}
+        >
             {icon}
             {content}
         </a>

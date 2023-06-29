@@ -12,6 +12,14 @@
         cursor: pointer;
         transition: all 0.3s ease;
         padding: var(--spacing-sm) 0;
+        justify-content: space-between;
+        gap: var(--spacing-sm);
+        z-index: 2;
+
+        span {
+            min-width: max-content;
+        }
+
     }
 
     .title.noPadding {
@@ -19,22 +27,44 @@
     }
 
     .collapse-icon {
-        position: absolute;
+        position: relative;
         right: 0;
         transition: opacity 0.3s ease;
         opacity: 1;
+        margin-left: var(--spacing-sm);
     }
 
     .collapse-icon.hide {
         opacity: 0;
+        display: none;
+    }
+
+    .content-container{
+        max-height: 0;
+        width: 100%;
+        transition: all 0.3s ease;
+        position: absolute;
+    }
+
+    .content-container.collapsed {
+        max-height: max-content;
+    }
+
+    .content-container.relative {
+        position: relative;
     }
 
     .content {
+        position: relative;
         max-height: 0;
         overflow: hidden;
         transition: all 0.3s ease;
         cursor: pointer;
         padding: 0;
+        width: 100%;
+        min-width: max-content;
+        z-index: 3;
+
     }
 
     .content.collapsed {
@@ -84,4 +114,7 @@
         border-bottom-right-radius: var(--border-radius-md);
     }
 }
+
+
+
 
