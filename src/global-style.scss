@@ -74,6 +74,7 @@ html {
     overflow: auto;
     scroll-behavior: smooth;
 
+
     &::-webkit-scrollbar {
         width: 8px;
         background-color: var(--contrast-color);
@@ -97,6 +98,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    position: relative;
+
 }
 
 ul {

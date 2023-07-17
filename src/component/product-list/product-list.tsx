@@ -17,10 +17,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faArrowUpRightFromSquare,
+    faPlus,
     faSquareMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "../button";
 import { useViewport } from "../../hook/useViewport";
+import { FormAdd } from "../form/form-add";
 
 const cl = classNames.bind(styles);
 
@@ -31,6 +33,7 @@ export const ProductList = ({}) => {
     const [loading, setLoading] = useState(true);
     const [amountProduct, setAmountProduct] = useState(5);
     const [listShow, setListShow] = useState<ProductListState>([]);
+    const [isShowModal, setIsShowModal] = useState(false);
 
     localStorage.totalProduct = 56;
 
@@ -336,7 +339,22 @@ export const ProductList = ({}) => {
                         </div>
                     </div>
 
+                    <FormAdd isShow={isShowModal} setClose={setIsShowModal} />
+
                     <div className={cl("mainList")}>
+                        <Button
+                            primary
+                            className={cl("btn-add", "hideOnMobile")}
+                            onClick={() => {
+                                setIsShowModal(true);
+                            }}
+                        >
+                            <FontAwesomeIcon
+                                icon={faPlus}
+                                className={cl("add-icon")}
+                            />
+                            Add product
+                        </Button>
                         <ul className={cl("listProductContainer")}>
                             {width <= 739
                                 ? listShow.map((item) => (

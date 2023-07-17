@@ -1,0 +1,30 @@
+#modal-root {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background-color: var(--transparent-dark);
+    }
+
+    .children-modal {
+        position: absolute;
+        z-index: 999999;
+        margin: auto;
+        min-width: 100px;
+    }
+}
+
+#modal-root.show {
+    display: flex;
+}
+
+#modal-root.hide {
+    display: none;
+}

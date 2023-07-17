@@ -13,6 +13,7 @@ export const Button = (props: {
     to?: any;
     className?: any;
     primary?: boolean;
+    type?: "button" | "submit" | "reset" | undefined;
 }) => {
     return props.href !== undefined ? (
         <a
@@ -40,6 +41,7 @@ export const Button = (props: {
         </Link>
     ) : (
         <button
+            type={props.type}
             onClick={props.onClick}
             className={cl(
                 "btn",
